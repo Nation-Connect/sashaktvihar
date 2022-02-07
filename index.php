@@ -164,23 +164,15 @@ include 'db.php';
 									<ul class="tablist" role="tablist">
 										<!--<li>Service Doese Matter</li>-->
 										<li role="presentation" class="active"><a href="#residential" aria-controls="residential" role="tab" data-toggle="tab">Job Vacancies</a></li>
-										<li role="presentation"><a href="#commercial" aria-controls="commercial" role="tab" data-toggle="tab">Tender</a></li>
-
 									</ul>
 								</center>
 							</div>
-
-
-
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="residential">
 									<div class="column">
-
 										<?php
-
 										$sql = "SELECT * FROM job where status='active' ORDER BY id DESC";
 										$result = $conn->query($sql);
-
 										if ($result->num_rows > 0) {
 											// output data of each row
 											while ($row = $result->fetch_assoc()) {
@@ -191,25 +183,8 @@ include 'db.php';
 										} else {
 											echo "<img src='img/nojob.png' style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
 										}
-
 										?>
-
 									</div>
-
-								</div>
-
-								<div role="tabpanel" class="tab-pane fade" id="commercial">
-									<div class="column">
-										<div id="post-lists">
-
-
-
-										</div>
-
-
-									</div>
-
-
 								</div>
 							</div>
 						</div>
