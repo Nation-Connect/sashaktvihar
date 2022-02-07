@@ -202,7 +202,7 @@ include 'db.php';
 									<img src="img/important-notice.png" alt="welcome apbiharpower" width="360px">
 								</div>
 								<div class="term-content">
-									<div style="background-color:#5ECE4A;padding:10px 10px 10px 20px;">
+									<div style="background-color: #0ad39b;padding:10px 10px 10px 20px;">
 										<h3 style="color:white;">Important Notice:-</h3>
 									</div><br>
 									<ul style="margin-left:20px;">
