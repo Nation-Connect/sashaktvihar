@@ -19,7 +19,7 @@
 														<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 														<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 													</ul>
-													<p>Call Us: <a href="tel:+91 9608255314"><strong>+91 9608255314</strong></a> / <a href="tel:+91 7033630421"><strong>7033630421</strong></a</p>
+													<p>Call Us: <a href="tel:+91 7667105622"><strong>+91 7667105622</strong></a> / <a href="tel:+91 9470868348"><strong>9470868348</strong></a</p>
 												</div>										
 								            </div>
 									</div>

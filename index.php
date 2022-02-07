@@ -34,10 +34,10 @@ include 'db.php';
 	    Basic
 	    ========================================== -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Sashakt Vihar</title>
-	<meta name="keywords" content="Sashakt Vihar" />
-	<meta name="author" content="Sashakt Vihar" />
-	<meta name="description" content="Sashakt Vihar" />
+	<title>Sashakt Vihar Construction & Security Pvy. Ltd.</title>
+	<meta name="keywords" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
+	<meta name="author" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
+	<meta name="description" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
 
 	<!-- =========================================
 	    Mobile Configurations
@@ -243,7 +243,7 @@ include 'db.php';
 												echo '<li style="line-height:40px;font-size:16px;color:#636363;"><i class="fa fa-angle-right" aria-hidden="true"></i> ' . $row["notice"] . '</li>';
 											}
 										} else {
-											echo "Notice not found";
+											echo "No any notice is there";
 										}
 										$conn->close();
 										?>
