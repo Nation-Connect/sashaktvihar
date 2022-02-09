@@ -2045,3 +2045,32 @@ color:#dddddd;
     margin:0 0 2.2em 0;
   }
 }
+
+.cat-sec {
+  float: left;
+  width: 100%;
+}
+.row.no-gape {
+  margin: 0;
+}
+.row.no-gape > div {
+  padding: 0;
+}
+.p-category {
+  float: left;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+.cat-sec:last-child a {
+  border-bottom-color: #ffffff;
+}
+.p-category > a {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8ecec;
+  border-right: 1px solid #e8ecec;
+}
