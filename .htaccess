@@ -1,5 +1,6 @@
 #Rewrite everythings to https
 
+deny from all
 
 RewriteEngine On
 RewriteCond %{HTTPS} !on
