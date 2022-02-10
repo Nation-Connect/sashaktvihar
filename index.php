@@ -192,8 +192,7 @@ include 'db.php';
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
                                                                             <img src="img/job-opportunities.png" style="width: 64px;"></br>
-                                                                            <small class="text-secondary">Mileage (upto)</small>
-                                                                            <h5>Full Service</h5>
+                                                                            <h4><?php echo $row["title"]; ?></h4>
                                                                         </div>
                                                                     </div>
                                                                 </a>
