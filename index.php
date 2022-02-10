@@ -187,7 +187,7 @@ include 'db.php';
 
                                                     ?>
 
-                                                            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 10px;">
+                                                            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
                                                                 <a href="#" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
