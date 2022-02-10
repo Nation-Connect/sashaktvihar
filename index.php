@@ -191,8 +191,8 @@ include 'db.php';
                                                                 <a href="#" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
-                                                                            <img src="img/job-opportunities.png" style="width: 64px;"></br>
-                                                                            <h4><?php echo $row["title"]; ?></h4>
+                                                                            <img src="img/job-opportunities.png" style="width: 64px;"></br></br>
+                                                                            <h3><?php echo $row["title"]; ?></h3>
                                                                         </div>
                                                                     </div>
                                                                 </a>
