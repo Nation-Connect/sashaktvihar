@@ -172,7 +172,7 @@ include 'db.php';
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="residential">
                                     <div class="column">
-                                        <section class="services py-5 bg-light text-center">
+                                        <section class="py-5 bg-light text-center">
                                             <div class="container">
                                                 <div class="row">
                                                     <?php
