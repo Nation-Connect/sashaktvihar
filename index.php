@@ -199,13 +199,13 @@ include 'db.php';
                                                                 </a>
                                                             </div>
 
-                                                </div>
-                                        <?php }
+                                                    <?php }
                                                     } else {
                                                         echo "<img src='img/nojob.png'
-                                                style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
+                                                        style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
                                                     }
-                                        ?>
+                                                    ?>
+                                                </div>
                                             </div>
                                         </section>
                                     </div>
