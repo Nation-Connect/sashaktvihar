@@ -191,7 +191,7 @@ include 'db.php';
                                                                 <a href="#" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
-                                                                            <i class="fa fa-tachometer fa-4x "></i></br>
+                                                                            <img src="img/job-opportunities"></br>
                                                                             <small class="text-secondary">Mileage (upto)</small>
                                                                             <h5>Full Service</h5>
                                                                         </div>
