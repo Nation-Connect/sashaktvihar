@@ -189,7 +189,7 @@ include 'db.php';
 
                                                             <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 10px;">
                                                                 <a href="#" class="text-body">
-                                                                    <div class="card bg-warning mb-3" style="padding: 5px;">
+                                                                    <div class="card bg-warning mb-3" style="padding: 10px;">
                                                                         <div class="card-body">
                                                                             <i class="fa fa-tachometer fa-4x "></i></br>
                                                                             <small class="text-secondary">Mileage (upto)</small>
