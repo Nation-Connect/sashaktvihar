@@ -39,6 +39,11 @@
                 </div>
                 <!-- offcanvas-trigger-effects -->
             </div>
+			<style>.navbar-logo, .navbar-links {
+    display: inline;
+    width: initial !important;
+}
+</style>
 
             <!-- navbar-collapse -->
             <nav role="navigation" class="collapse navbar-collapse navbar main-nav">
