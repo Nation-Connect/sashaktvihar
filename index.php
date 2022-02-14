@@ -187,7 +187,7 @@ include 'db.php';
 
                                                     ?>
 
-                                                            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;height:100px;">
+                                                            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;height:150px;">
                                                                 <a href="terms.php?id=<?php echo $row["id"]; ?>" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
