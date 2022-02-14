@@ -46,12 +46,12 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <!-- <li><a href="services.php">Services</a></li> -->
-                    <li class="dropdown"><a href="services.pho">Services</a>
+                    <li class="dropdown"><a href="services.php">Services</a>
                         <ul class="dropdown-menu">
                             <?php
 								if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
-									echo '<li><a href="article-page.html">'.$row['title'].'</a></li>';
+									echo '<li><a href="article-page.html" class="text-wrap">'.$row['title'].'</a></li>';
 								}
 							}
                             ?>
