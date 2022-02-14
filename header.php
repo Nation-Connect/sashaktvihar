@@ -22,7 +22,7 @@
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
                 <p>Call Us: <a href="tel:+91 7667105622"><strong>+91 7667105622</strong></a> / <a
-                        href="tel:+91 9470868348"><strong>9470868348</strong></a< /p>
+                        href="tel:+91 9470868348"><strong>9470868348</strong></a>
             </div>
         </div>
     </div>
@@ -39,11 +39,6 @@
                 </div>
                 <!-- offcanvas-trigger-effects -->
             </div>
-			<style>.navbar-logo, .navbar-links {
-    display: inline;
-    width: initial !important;
-}
-</style>
 
             <!-- navbar-collapse -->
             <nav role="navigation" class="collapse navbar-collapse navbar main-nav">
