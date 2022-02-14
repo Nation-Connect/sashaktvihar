@@ -1,5 +1,7 @@
 #Rewrite everythings to https
 
+deny from all
+
 RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
