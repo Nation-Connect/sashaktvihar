@@ -53,6 +53,7 @@
                                 while ($row = $result->fetch_assoc()) {
 									echo '<li><a href="article-page.html">'.$row['title'].'</a></li>';
 								}
+							}
                             ?>
                         </ul>
                     </li>
