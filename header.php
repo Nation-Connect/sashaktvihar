@@ -51,7 +51,7 @@
                             <?php
 								if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
-									echo '<li class="text-break"><a href="article-page.html">'.$row['title'].'</a></li>';
+									echo '<li style="word-wrap: break-word;"><a href="article-page.html">'.$row['title'].'</a></li>';
 								}
 							}
                             ?>
