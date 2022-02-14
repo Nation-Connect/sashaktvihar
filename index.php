@@ -193,7 +193,6 @@ include 'db.php';
                                                                     </div>
                                                                 </a>
                                                             </div>
-
                                                     <?php }
                                                     } else {
                                                         echo "<img src='img/nojob.png'
