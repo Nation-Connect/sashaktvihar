@@ -47,6 +47,11 @@ include 'db.php';
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <?php include 'head.php'; ?>
+    <?php
+    $sql = "SELECT * FROM job where status='active' ORDER BY id DESC";
+    $result = $conn->query($sql);
+
+    ?>
 </head>
 <!-- /head -->
 
@@ -114,7 +119,6 @@ include 'db.php';
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-
                             <div class="homemarque" style="margin-top:-7px;">
                                 <?php
                                 mysqli_set_charset($conn, 'utf8');
@@ -130,13 +134,11 @@ include 'db.php';
                                     //echo "<img src='img/nojob.png' style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
                                     //echo "not found";
                                 }
-
                                 ?>
                                 <?php
                                 mysqli_set_charset($conn, 'utf8');
                                 $slidersql = "SELECT * FROM textslider where id = 2";
                                 $slideresult = $conn->query($slidersql);
-
                                 if ($slideresult->num_rows > 0) {
                                     // output data of each row
                                     while ($row = $slideresult->fetch_assoc()) {
@@ -148,7 +150,6 @@ include 'db.php';
                                 }
 
                                 ?>
-
                             </div>
                         </div>
                         <!-- .col-md-12-->
@@ -176,17 +177,11 @@ include 'db.php';
                                             <div class="container">
                                                 <div class="row">
                                                     <?php
-                                                    $sql = "SELECT * FROM job where status='active' ORDER BY id DESC";
-                                                    $result = $conn->query($sql);
+
                                                     if ($result->num_rows > 0) {
                                                         // output data of each row
                                                         while ($row = $result->fetch_assoc()) {
-                                                            // echo '<div class="job-item"><div class="job-title"><h3>' . $row["title"] . '</h3></div>
-                                                            //                           <div class="job-desc"><p>' . $row["short_desc"] . '</p></div><div class="applybtn"><a href="terms.php?id=' . $row["id"] . '"><button>Apply Now
-                                                            //                           </button></a></div></div>';
-
                                                     ?>
-
                                                             <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;height:250px;">
                                                                 <a href="terms.php?id=<?php echo $row["id"]; ?>" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
