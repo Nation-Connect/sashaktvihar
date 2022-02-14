@@ -192,7 +192,7 @@ include 'db.php';
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
                                                                             <img src="img/job-opportunities.png" style="width: 64px;"></br></br>
-                                                                            <h5 style="color: black;"><?php echo $row["title"]; ?></h5>
+                                                                            <h4 style="color: black;"><?php echo $row["title"]; ?></h4>
                                                                             <button class="btn" href="">Apply Now</button>
                                                                         </div>
                                                                     </div>
