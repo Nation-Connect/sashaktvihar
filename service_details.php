@@ -90,7 +90,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="page-title">
-										<h2><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo $title;?></h2>
+										<h2><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo $title; ?></h2>
 										<ul class="breadcrumb">
 
 										</ul>
@@ -106,30 +106,19 @@
 					<div class="container">
 						<div class="row">
 							<div class="termsmain">
-								<h2 align="center"><?php echo $title;?></h2>
+								<h2 align="center"><?php echo $title; ?></h2>
 								<hr class="hrtnc">
 								<div class="teamdesc">
-									<?php echo $terms;?>
+									<?php echo $terms; ?>
 								</div>
-								<div class="acceptterm">
-									<form action="registration.php?id=<?php echo $id; ?>" method="POST">
-										<input type="checkbox" required>&nbsp;&nbsp;I have read and accept the Terms & Conditions
-										<br><br>
-										<button>Proceed</button>
-									</form>
-								</div>
-
 							</div>
 							<br><br>
 						</div>
 						<!-- .row-->
 					</div>
 					<!-- .container-->
-
 					<?php include 'footer.php'; ?>
 					<!-- .container-->
-
-
 				</div>
 				<!--content-wrapper-->
 			</div>
@@ -140,15 +129,11 @@
 		</div>
 		<!-- #wrapper -->
 
-
 		<!-- =========================================
 		JAVASCRIPT
 		========================================== -->
 
 		<?php include 'foot.php'; ?>
-
-
-
 	</body>
 
 	</html>
