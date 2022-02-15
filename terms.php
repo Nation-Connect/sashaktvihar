@@ -104,7 +104,7 @@
                                                             if ($result->num_rows > 0) {
                                                                 // output data of each row
                                                                 while($row = $result->fetch_assoc()) {
-                                                                    echo $row["terms"];
+                                                                    echo $row["short_desc"];
                                                                 }
                                                             } else {
                                                                 echo "Something went wrong";
