@@ -137,9 +137,6 @@ if (empty($_GET['id'])) {
 							</div>
 							<div class="regform">
 								<form method="post" id="jobregform" onsubmit="return uplodeimgcheck()" enctype="multipart/form-data" action="submission.php">
-
-
-
 									<div class="fromrightside">
 										<div class="regformimg">
 											<img id="blah" src="img/image_not_found_thumb.gif" alt="your image" width="100%" height="238px" />
@@ -150,16 +147,11 @@ if (empty($_GET['id'])) {
 											<p style="margin-top:-5px;">(max-size:- 80kb)</p>
 										</center>
 									</div>
-
 									<div class="formleftside">
-
-
 										<?php
-
 										$sql = "SELECT * FROM job where id='$id'";
 										mysqli_set_charset($conn, 'utf8');
 										$result = $conn->query($sql);
-
 										if ($result->num_rows > 0) {
 											// output data of each row
 											while ($row = $result->fetch_assoc()) {
@@ -171,13 +163,35 @@ if (empty($_GET['id'])) {
 										}
 										$conn->close();
 										?>
-
-
-
 										<div class="formpi col-sm-8">
-											<h4>Persional Information:- </h4>
+											<h4>Sub Post:- </h4>
 										</div>
+										<div class="formdivpi">
+											<div class="row" style="height:50px;">
+												<div class="col-sm-4">
+													<label>Field Worker: </label><br>
+													<input type="checkbox" id="rfname" name="firstname" required>
+												</div>
+												<div class="col-sm-4">
+													<label>Supervisor:</label><br>
+													<input type="checkbox" id="rlname" name="lastname" required>
+												</div>
+											</div><br><br>
 
+											<!-- <div class="row mblfat">
+												<div class="col-sm-4">
+													<label>Father's Name: </label><br>
+													<input type="text" name="fathername" required>
+												</div>
+												<div class="col-sm-4">
+													<label>Mother's Name: </label><br>
+													<input type="text" name="mothername" required>
+												</div>
+											</div><br> -->
+										</div>
+										<div class="formpi col-sm-8">
+											<h4>Personal Information:- </h4>
+										</div>
 										<div class="formdivpi">
 											<div class="row" style="height:50px;">
 												<div class="col-sm-4">
