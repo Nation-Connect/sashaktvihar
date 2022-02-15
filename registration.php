@@ -209,10 +209,6 @@ if (empty($_GET['id'])) {
 												</div>
 											</div><br><br>
 
-											<div class="row mblfat">
-												
-											</div><br>
-
 											<div class="row">
 												<div class="col-sm-4">
 													<label>Sex: </label><br>
