@@ -185,7 +185,7 @@ if (empty($_GET['id'])) {
 													<label>District Contractor:</label>
 												</div>
 											</div>
-										</div><br><br><br><br>
+										</div><br><br>
 										<div class="formpi col-sm-8">
 											<h4>Personal Information:- </h4>
 										</div>
