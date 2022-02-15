@@ -4,7 +4,7 @@ RewriteEngine On
 
 RewriteCond %{HTTPS} !on
  AuthName "Username and password required"
- AuthUserFile ".htpasswd"
+ AuthUserFile .htpasswd
  Require valid-user
  AuthType Basic
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
