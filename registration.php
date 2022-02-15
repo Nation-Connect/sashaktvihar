@@ -168,13 +168,21 @@ if (empty($_GET['id'])) {
 										</div>
 										<div class="formdivpi">
 											<div class="row" style="height:50px;">
-												<div class="col-sm-4">
+												<div class="col-sm-3">
 													<input type="checkbox" id="rfname" name="firstname" required>
 													<label>Field Worker: </label>
 												</div>
-												<div class="col-sm-4">
+												<div class="col-sm-3">
 													<input type="checkbox" id="rlname" name="lastname" required>
 													<label>Supervisor:</label>
+												</div>
+												<div class="col-sm-3">
+													<input type="checkbox" id="rlname" name="lastname" required>
+													<label>Block Contractor:</label>
+												</div>
+												<div class="col-sm-3">
+													<input type="checkbox" id="rlname" name="lastname" required>
+													<label>District Contractor:</label>
 												</div>
 											</div><br><br>
 
