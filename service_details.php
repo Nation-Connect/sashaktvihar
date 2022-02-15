@@ -21,8 +21,6 @@
 	} else {
 		echo "Something went wrong";
 	}
-	$conn->close();
-
 	?>
 	<!DOCTYPE html>
 	<!--[if IE 7 ]>
