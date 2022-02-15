@@ -167,7 +167,7 @@ if (empty($_GET['id'])) {
 											<h4>Sub Post:- </h4>
 										</div>
 										<div class="formdivpi">
-											<div class="row" style="height:50px;">
+											<div class="row">
 												<div class="col-sm-4 col-md-4">
 													<input type="checkbox" id="rfname" name="firstname" required>
 													<label>Field Worker: </label>
@@ -185,7 +185,7 @@ if (empty($_GET['id'])) {
 													<label>District Contractor:</label>
 												</div>
 											</div>
-										</div><br><br><br>
+										</div><br><br><br><br>
 										<div class="formpi col-sm-8">
 											<h4>Personal Information:- </h4>
 										</div>
