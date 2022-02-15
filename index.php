@@ -1,6 +1,5 @@
 <?php
 include 'db.php';
-echo $_SERVER['DOCUMENT_ROOT'];
 ?>
 
 <!DOCTYPE html>
