@@ -105,10 +105,10 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="termsmain">
+							<div class="servicedetailsmain">
 								<h2 align="center"><?php echo $title; ?></h2>
 								<hr class="hrtnc">
-								<div class="teamdesc">
+								<div class="servicedetailsdesc">
 									<?php echo $terms; ?>
 								</div>
 							</div>

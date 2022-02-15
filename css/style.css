@@ -457,11 +457,30 @@ position:relative;
 	font-size:0.9em
 }
 
+/*service details page */
+
+.servicedetailsmain{
+    
+  width:80%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid #ccc;
+  margin-top:80px;
+}
+.servicedetailsmain h2{
+  margin-top:50px;
+}
+.servicedetailsdesc{
+  margin-top:80px;
+  padding-left:50px;
+}
+
 /*terms and conditions page */
 
 .termsmain{
     
-    width:80%;
+    width:60%;
     height:auto;
     margin-left:auto;
     margin-right:auto;
