@@ -1,7 +1,7 @@
 <?php
 	    
 	    if(!isset($_SERVER['HTTP_REFERER'])){
-           header("Location: http://apbiharpower.in"); 
+           header("Location: http://sashaktvihar.com"); 
              exit();
          }
         
@@ -119,8 +119,8 @@
 	    Basic
 	    ========================================== -->
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	    <title>Apbiharpower.in - Form Submission</title>
-	    <meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, apbiharpower"/>
+	    <title>Sashaktvihar.com - Form Submission</title>
+	    <meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, sashaktvihar"/>
 	    <meta name="author" content="Anjali & Poonam Power Services Pvt. Ltd."/>
 	    <meta name="description" content="Anjali & Poonam Power Services Pvt. Ltd."/>
 
@@ -188,7 +188,7 @@
 								
                                             						    	<div class="formsubdesc">
                                             						    	    <center>
-                                            						    	        <img src="img/payment-success.png" width="100px" height="100px" alt="apbiharpower">
+                                            						    	        <img src="img/payment-success.png" width="100px" height="100px" alt="sashaktvihar">
                                             						    	        <br><br>
                                             						    	        <h3>Registration Completed Successfully</h3>
                                             						    	        <p>Please check your email for download submission form</p>
@@ -381,7 +381,7 @@
                                                                 $stylesheet = file_get_contents('css/pdf.css'); // external css
                                                                 $mpdf->WriteHTML($stylesheet,1);
                                                                 $mpdf->WriteHTML($html,2);
-                                                                $mpdf->setFooter('www.apbiharpower.in') ;
+                                                                $mpdf->setFooter('www.sashaktvihar.com') ;
                                                                 $mpdf->SetWatermarkImage('img/logopdf.jpg');
                                                                 $mpdf->showWatermarkImage = true;
                                                                 
@@ -437,13 +437,13 @@
 								
                                     						    	<div class="formsubdesc">
                                     						    	    <center>
-                                    						    	        <img src="img/Oops-Something-went-wrong.png" alt="apbiharpower">
+                                    						    	        <img src="img/Oops-Something-went-wrong.png" alt="sashaktvihar">
                                     						    	        
                                     						    	    </center>
                                     						    	</div>
                                     						    	<div class="acceptterm">
                                     						    	    
-                                    						    	    <a href="https://apbiharpower.in/"><button>Go to Home</button></a>
+                                    						    	    <a href="https://sashaktvihar.com/"><button>Go to Home</button></a>
                                     						    	    
                                     						    	</div>
                                     						    	

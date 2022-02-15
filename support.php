@@ -114,7 +114,7 @@
                                                     <br>
                                                     <div class="row">
                                                         <div class="col-md-3 text-center">
-                                                            <img class="supportlistimg" src="'.$row["image"].'" alt="apbiharpower.in"><br>
+                                                            <img class="supportlistimg" src="'.$row["image"].'" alt="sashaktvihar.com"><br>
                                                             <h4>'.$row["name"].'</h4>
                                                         </div>
                                                                 
@@ -146,7 +146,7 @@
         <!--                            <br>-->
         <!--                            <div class="row">-->
         <!--                                <div class="col-md-3 text-center">-->
-        <!--                                    <img class="supportlistimg" src="img/team/support/patna.jpg" alt="apbiharpower.in"><br>-->
+        <!--                                    <img class="supportlistimg" src="img/team/support/patna.jpg" alt="sashaktvihar.com"><br>-->
         <!--                                    <h4>Kajal Rajput</h4>-->
         <!--                                </div>-->
                                                 

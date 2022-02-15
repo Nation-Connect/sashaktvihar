@@ -3,7 +3,7 @@
 	    
 	    $id= $_GET["id"];
 	    if (empty($_GET['id'])) {
-	        header("Location: http://apbiharpower.in"); 
+	        header("Location: http://sashaktvihar.com"); 
             exit();
 	    }
 	?>
@@ -35,8 +35,8 @@
 	    Basic
 	    ========================================== -->
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	    <title>Term & Conditions - apbiharpower.in</title>
-	    <meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, apbiharpower"/>
+	    <title>Term & Conditions - sashaktvihar.com</title>
+	    <meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, sashaktvihar"/>
 	    <meta name="author" content="Anjali & Poonam Power Services Pvt. Ltd."/>
 	    <meta name="description" content="Anjali & Poonam Power Services Pvt. Ltd."/>
 

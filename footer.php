@@ -42,7 +42,7 @@
 								
 								<div class="col-md-4 col-sm-6">
 						            <div class="logo footer-logo">
-						                <a title="apbiharpower" href="index.php">
+						                <a title="sashaktvihar" href="index.php">
 						                    <!--<img src="img/logo1.png" alt="Anjali & Poonam Power Services Pvt. Ltd.">-->
 						                    <h4>Anjali & Poonam Power Services Pvt. Ltd.</h4>
 						                </a>

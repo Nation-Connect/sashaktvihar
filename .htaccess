@@ -13,7 +13,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 
 # RewriteEngine on
-# RewriteCond %{HTTP_HOST} ^(?:www\.)?apbiharpower\.in [NC]
+# RewriteCond %{HTTP_HOST} ^(?:www\.)?sashaktvihar\.in [NC]
 # RewriteCond ${ipmap:%{REMOTE_ADDR}} !^(127\.0\.0\.1|192\.168\.|10\.|1\.2\.3\.4)$
 # RewriteRule ^ - [F]
 
@@ -22,7 +22,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 # RewriteBase /
 # RewriteCond %{REMOTE_ADDR} !^11\.111\.111\.111
 # RewriteCond %{REQUEST_URI} !^/maintenance\.html$
-# RewriteRule ^(.*)$ http://apbiharpower.in/maintenance.html [R=307,L]
+# RewriteRule ^(.*)$ http://sashaktvihar.com/maintenance.html [R=307,L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php73” package as the default “PHP” programming language.

@@ -217,7 +217,7 @@ $result = $conn->query($sql);
                         <div class="col-md-12">
                             <div class="term-section">
                                 <div class="term-thumb">
-                                    <img src="img/important-notice.png" alt="welcome apbiharpower" width="360px">
+                                    <img src="img/important-notice.png" alt="welcome sashaktvihar" width="360px">
                                 </div>
                                 <div class="term-content">
                                     <div style="background-color: #E96220;padding:10px 10px 10px 20px;">

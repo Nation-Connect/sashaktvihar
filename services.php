@@ -78,7 +78,6 @@
 
 
 	<body>
-
 		<div class="wrapper" id="wrapper">
       		<div class="offcanvas-pusher">
 	      		<div class="content-wrapper">

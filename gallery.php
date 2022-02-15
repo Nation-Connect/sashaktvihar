@@ -112,7 +112,7 @@
                                                                 // output data of each row
                                                                 while($row = $slideresult->fetch_assoc()) {
                                                                     
-                                                                     echo '<a href="img/gallery/'.$row["link"].'"data-lightbox="photos"><img class="img-fluid galimg" src="img/gallery/'.$row["link"].'" style="margin:10px;border:1px solid #ccc;padding:5px;" alt="apbiharpower.in"/></a>';
+                                                                     echo '<a href="img/gallery/'.$row["link"].'"data-lightbox="photos"><img class="img-fluid galimg" src="img/gallery/'.$row["link"].'" style="margin:10px;border:1px solid #ccc;padding:5px;" alt="sashaktvihar.com"/></a>';
                           
                                                                 }
                                                             } else {

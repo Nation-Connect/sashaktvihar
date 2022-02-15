@@ -2,7 +2,7 @@
     <div class="header-top">
         <div class="col-md-9 col-xs-12 col-sm-9">
             <div class="logo">
-                <a title="apbiharpower" href="index.php">
+                <a title="sashaktvihar" href="index.php">
                     <img class="mainlogo" src="img/logo.png" width="60%" alt="Anjali & Poonam Power Services Pvt. Ltd.">
                     <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;" width="20%"
                         alt="Anjali & Poonam Power Services Pvt. Ltd.">
@@ -51,7 +51,7 @@
                             <?php
 								if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
-									echo '<li style="word-wrap: break-word;"><a href="article-page.html">'.$row['title'].'</a></li>';
+									echo '<li style="word-wrap: break-word;"><a href="service_details.php?id='. $row["id"].'">'.$row['title'].'</a></li>';
 								}
 							}
                             ?>

@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SERVER['HTTP_REFERER'])){
-           header("Location: http://apbiharpower.in"); 
+           header("Location: http://sashaktvihar.com"); 
              exit();
          }
          
@@ -35,7 +35,7 @@ label,a,body
 
 </style>	
 <!-- a helper script for vaidating the form-->
-<meta http-equiv="refresh" content="3;URL='http://apbiharpower.in/'" />
+<meta http-equiv="refresh" content="3;URL='http://sashaktvihar.com/'" />
 </head>	
 
 

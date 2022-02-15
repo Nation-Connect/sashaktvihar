@@ -89,7 +89,7 @@
 								<div class="history">
 									<h3>About Us</h3>
 									<div class="history-details">
-										<img src="img/ijeabistock-659493016.jpg" alt="apbiharpower">
+										<img src="img/ijeabistock-659493016.jpg" alt="sashaktvihar">
 										<p style="text-align:justify;">Anjali & Poonam Power Services Pvt. Ltd. is one the leading power maintenance services providing company in Bihar.we propose and perform periodical inspections, parts replacements, diagnoses, and renovations of commercial and non commercial electrical meter. As a professional group on the maintenace service, we perform consultating services on environmental survey, diagnoses of the problem, etc. We provide 24*7 technical support services to provide you uninterrupted electrical supply.
 										</p>
 										
