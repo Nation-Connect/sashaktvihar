@@ -186,7 +186,7 @@ if (empty($_GET['id'])) {
 												</div>
 											</div>
 										</div>
-										<div class="formpi col-sm-12">
+										<div class="formpi col-sm-12 mblfat">
 											<h4>Personal Information:- </h4>
 										</div>
 										<div class="formdivpi">
