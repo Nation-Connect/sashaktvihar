@@ -92,7 +92,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="page-title">
-										<h2><img src="img/job-opportunities.png" style="width: 64px;">&nbsp;&nbsp;<?php echo $terms;?></h2>
+										<h2><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp;<?php echo $title;?></h2>
 										<ul class="breadcrumb">
 
 										</ul>
