@@ -108,7 +108,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="termsmain">
-								<h2 align="center">Terms and Conditions</h2>
+								<h2 align="center"><?php echo $title;?></h2>
 								<hr class="hrtnc">
 								<div class="teamdesc">
 									<?php echo $terms;?>
