@@ -163,7 +163,7 @@ if (empty($_GET['id'])) {
 										}
 										$conn->close();
 										?>
-										<div class="formpi col-sm-8">
+										<div class="formpi col-sm-8 col-md-8">
 											<h4>Sub Post:- </h4>
 										</div>
 										<div class="formdivpi">
