@@ -1,10 +1,7 @@
 #Rewrite everythings to https
 
 RewriteEngine On
-AuthType Basic 
-AuthName "My Protected Folder" 
-AuthUserFile .htpasswd 
-require valid-user
+
 RewriteCond %{HTTPS} !on
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
