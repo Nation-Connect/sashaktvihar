@@ -1100,7 +1100,9 @@ Dropdown menu style
 .main-nav .dropdown-menu li a{
     color: #ffffff;
     display: inline-block;
-    padding: 0px 30px;
+    padding: 0px 22px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 .main-nav .dropdown-menu li a:hover{
   color:#6c6c6c;
