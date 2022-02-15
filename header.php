@@ -49,9 +49,11 @@
                     <li class="dropdown"><a href="services.php">Services</a>
                         <ul class="dropdown-menu">
                             <?php
-								if ($result->num_rows > 0) {
-                                while ($row = $result->fetch_assoc()) {
-									echo '<li style="word-wrap: break-word;"><a href="service_details.php?id='. $row["id"].'">'.$row['title'].'</a></li>';
+                            $navsql = "SELECT * FROM job where status='active' ORDER BY id DESC";
+                            $navresult = $conn->query($navsql);
+								if ($navresult->num_rows > 0) {
+                                while ($navrow = $navresult->fetch_assoc()) {
+									echo '<li style="word-wrap: break-word;"><a href="service_details.php?id='. $navrow["id"].'">'.$navrow['title'].'</a></li>';
 								}
 							}
                             ?>
