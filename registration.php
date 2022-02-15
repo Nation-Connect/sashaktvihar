@@ -190,26 +190,27 @@ if (empty($_GET['id'])) {
 											<h4>Personal Information:- </h4>
 										</div>
 										<div class="formdivpi">
-											<div class="row" style="height:50px;">
-												<div class="col-sm-4">
+											<div class="row">
+												<div class="col-sm-3">
 													<label>First Name: </label><br>
 													<input type="text" id="rfname" name="firstname" required>
 												</div>
-												<div class="col-sm-4">
+												<div class="col-sm-3">
 													<label>Last Name:</label><br>
 													<input type="text" id="rlname" name="lastname" required>
+												</div>
+												<div class="col-sm-3">
+													<label>Father's Name: </label><br>
+													<input type="text" name="fathername" required>
+												</div>
+												<div class="col-sm-3">
+													<label>Mother's Name: </label><br>
+													<input type="text" name="mothername" required>
 												</div>
 											</div><br><br>
 
 											<div class="row mblfat">
-												<div class="col-sm-4">
-													<label>Father's Name: </label><br>
-													<input type="text" name="fathername" required>
-												</div>
-												<div class="col-sm-4">
-													<label>Mother's Name: </label><br>
-													<input type="text" name="mothername" required>
-												</div>
+												
 											</div><br>
 
 											<div class="row">
