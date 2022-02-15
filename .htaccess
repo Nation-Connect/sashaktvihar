@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} !on
 <Files "index.php">
  AuthName "Username and password required"
- AuthUserFile .htpasswd
+ AuthUserFile /public_html/sashaktvihar.com/.htpasswd
  Require valid-user
  AuthType Basic
 </Files>
