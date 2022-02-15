@@ -54,7 +54,7 @@
 	    Basic
 	    ========================================== -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Term & Conditions - sashaktvihar.com</title>
+		<title>Service Details - sashaktvihar.com</title>
 		<meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, sashaktvihar" />
 		<meta name="author" content="Anjali & Poonam Power Services Pvt. Ltd." />
 		<meta name="description" content="Anjali & Poonam Power Services Pvt. Ltd." />
