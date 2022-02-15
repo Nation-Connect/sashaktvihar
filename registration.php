@@ -169,12 +169,12 @@ if (empty($_GET['id'])) {
 										<div class="formdivpi">
 											<div class="row" style="height:50px;">
 												<div class="col-sm-4">
-													<label>Field Worker: </label><br>
 													<input type="checkbox" id="rfname" name="firstname" required>
+													<label>Field Worker: </label>
 												</div>
 												<div class="col-sm-4">
-													<label>Supervisor:</label><br>
 													<input type="checkbox" id="rlname" name="lastname" required>
+													<label>Supervisor:</label>
 												</div>
 											</div><br><br>
 
