@@ -4,7 +4,7 @@
 	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 	    <!-- //Fonts -->
 	    
-	    <link rel="icon" href="img/logo1.png" type="image/icon type">
+	    <link rel="icon" href="img/logo1.jpeg" type="image/icon type">
 
 	    <!-- Owl Carousel CSS -->
 	    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
