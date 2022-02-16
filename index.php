@@ -95,10 +95,10 @@ include 'db.php';
                                 <div class="item">
                                     <img src="img/slide2.jpg" alt="slide2">
                                     <div class="carousel-caption">
-                                        <h1>Quick Service, Quality Work &amp; Be Happy...
+                                        <!-- <h1>Quick Service, Quality Work &amp; Be Happy...
                                         </h1>
 
-                                        <a class="btn" href="about.html">Learn More</a>
+                                        <a class="btn" href="about.html">Learn More</a> -->
                                     </div>
                                 </div>
                                 <div class="item">
