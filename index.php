@@ -107,7 +107,7 @@ include 'db.php';
                                         <h1>Quick Service, Quality Work &amp; Be Happy...
                                         </h1>
 
-                                        <a class="btn" href="about.html">Learn More</a>
+                                        <a class="btn" href="about.php">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@ include 'db.php';
                                             <div class="container">
                                                 <div class="row">
                                                     <?php
-$result = $conn->query($sql);
+                                                    $result = $conn->query($sql);
                                                     if ($result->num_rows > 0) {
                                                         // output data of each row
                                                         while ($row = $result->fetch_assoc()) {
@@ -260,15 +260,17 @@ $result = $conn->query($sql);
                                     <img src="img/welcome-home.jpg" alt="welcome apbiharpowe">
                                 </div>
                                 <div class="welcome-content">
-                                    <h3>Welcome to Anjali & Poonam Power Services Pvt. Ltd.</h3>
-                                    <p>Anjali & Poonam Power Services Pvt. Ltd. is one the leading power maintenance
-                                        services providing company in Bihar. we propose and perform periodical
-                                        inspections, parts replacements, diagnoses, and renovations of commercial
-                                        and non commercial electrical meter. As a professional group on the
-                                        maintenace service, we perform consultating services on environmental
-                                        survey, diagnoses of the problem, etc. We provide 24*7 technical support
-                                        services to provide you uninterrupted electrical supply.</p>
-                                    <a class="btn" href="about.html">Read More</a>
+                                    <h3>Welcome to Sashakt Vihar Construction & Security Pvt. Ltd.</h3>
+                                    <p>Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading Construction & Power Maintenance Services Providing Company 
+                                        In Bihar. It Is Classified As Non-govt Private Company Established On 08 March 2019 By Pinku Kumar 
+                                        And Ritesh Kumar. Corporate Identification Number Is (Cin) U45200br2019ptc041293. We Propose And 
+                                        Perform Periodical Inspections, Parts Replacements, Diagnoses, And Installation Of Commercial And 
+                                        Non Commercial Electrical Meter. As A Professional Group On The Service Team. We Perform Government 
+                                        Projects Like Smart Meter, Gram Ujala Yojana , Nagar Nigam Qr Code, Gas Pipeline Project, Bihar 
+                                        Electrical Department Maintenance, Line Cable Transformer Maintenance. We Have Also A Huge Job For 
+                                        Security Guards In The Field Of Security Provisions Of Large Corporate Houses, Industries And Banking 
+                                        Institutions.</p>
+                                    <a class="btn" href="about.php">Read More</a>
                                 </div>
                             </div>
                             <!-- .welcome-section-->
