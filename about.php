@@ -90,7 +90,8 @@ include 'db.php';
 								<h3>About Us</h3>
 								<div class="history-details">
 									<img src="img/welcome-home.jpg" alt="sashaktvihar">
-									<p style="text-align:justify;margin-top:10px;">
+									<p style="text-align:justify;">
+									<br>
 										Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading Construction & Power Maintenance Services Providing Company
 										In Bihar. It Is Classified As Non-govt Private Company Established On 08 March 2019 By Pinku Kumar
 										And Ritesh Kumar. Corporate Identification Number Is (Cin) U45200br2019ptc041293. We Propose And
