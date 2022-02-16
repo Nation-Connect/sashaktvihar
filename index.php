@@ -93,7 +93,7 @@ include 'db.php';
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="img/slide1.jpg" alt="slide2">
+                                    <img src="img/slide2.jpg" alt="slide2">
                                     <div class="carousel-caption">
                                         <h1>Quick Service, Quality Work &amp; Be Happy...
                                         </h1>
