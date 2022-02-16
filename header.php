@@ -3,7 +3,7 @@
         <div class="col-md-9 col-xs-12 col-sm-9">
             <div class="logo">
                 <a title="sashaktvihar" href="index.php">
-                    <img class="mainlogo" src="img/logo.png" width="60%" alt="Anjali & Poonam Power Services Pvt. Ltd.">
+                    <img class="mainlogo" src="img/logo1.jpeg" width="60%" alt="Anjali & Poonam Power Services Pvt. Ltd.">
                     <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;" width="20%"
                         alt="Anjali & Poonam Power Services Pvt. Ltd.">
                     <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;" width="18%"
