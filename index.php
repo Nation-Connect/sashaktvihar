@@ -84,7 +84,7 @@ include 'db.php';
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="https://denetimservices.com/wp-content/uploads/2020/08/banner-img2.jpg" alt="slide1">
+                                    <img src="img/slide1.jpg" alt="slide1">
                                     <div class="carousel-caption">
                                         <h1>Quick Service, Quality Work &amp; Be Happy...
                                         </h1>
