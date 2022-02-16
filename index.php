@@ -261,14 +261,14 @@ include 'db.php';
                                 </div>
                                 <div class="welcome-content">
                                     <h3>Welcome to Sashakt Vihar Construction & Security Pvt. Ltd.</h3>
-                                    <p>Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading Construction & Power Maintenance Services Providing Company 
-                                        In Bihar. It Is Classified As Non-govt Private Company Established On 08 March 2019 By Pinku Kumar 
-                                        And Ritesh Kumar. Corporate Identification Number Is (Cin) U45200br2019ptc041293. We Propose And 
-                                        Perform Periodical Inspections, Parts Replacements, Diagnoses, And Installation Of Commercial And 
-                                        Non Commercial Electrical Meter. As A Professional Group On The Service Team. We Perform Government 
-                                        Projects Like Smart Meter, Gram Ujala Yojana , Nagar Nigam Qr Code, Gas Pipeline Project, Bihar 
-                                        Electrical Department Maintenance, Line Cable Transformer Maintenance. We Have Also A Huge Job For 
-                                        Security Guards In The Field Of Security Provisions Of Large Corporate Houses, Industries And Banking 
+                                    <p>Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading Construction & Power Maintenance Services Providing Company
+                                        In Bihar. It Is Classified As Non-govt Private Company Established On 08 March 2019 By Pinku Kumar
+                                        And Ritesh Kumar. Corporate Identification Number Is (Cin) U45200br2019ptc041293. We Propose And
+                                        Perform Periodical Inspections, Parts Replacements, Diagnoses, And Installation Of Commercial And
+                                        Non Commercial Electrical Meter. As A Professional Group On The Service Team. We Perform Government
+                                        Projects Like Smart Meter, Gram Ujala Yojana , Nagar Nigam Qr Code, Gas Pipeline Project, Bihar
+                                        Electrical Department Maintenance, Line Cable Transformer Maintenance. We Have Also A Huge Job For
+                                        Security Guards In The Field Of Security Provisions Of Large Corporate Houses, Industries And Banking
                                         Institutions.</p>
                                     <a class="btn" href="about.php">Read More</a>
                                 </div>
@@ -339,10 +339,6 @@ include 'db.php';
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
 
                             <!-- Left and right controls -->
@@ -358,18 +354,6 @@ include 'db.php';
 
                     </div>
                 </div><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- .container-->
                 <div class="quote-section">
                     <div class="container">
@@ -389,8 +373,6 @@ include 'db.php';
                     <!-- .container-->
                 </div>
                 <!-- .quote-section-->
-
-
 
                 <div class="container">
                     <div class="row">
@@ -419,22 +401,7 @@ include 'db.php';
 
     <?php include 'foot.php'; ?>
 
-    <script>
-        $(document).ready(function() {
-            $.ajax({
-                type: "GET",
-                async: false,
-                url: "tenderdata.php",
-                cache: false,
-                success: function(html) {
-                    $("#post-lists").append(html);
-                }
-            });
-        });
-    </script>
-
-
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         //<![CDATA[
         var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" :
             "http://www.trustlogo.com/");
@@ -444,7 +411,7 @@ include 'db.php';
     </script>
     <script language="JavaScript" type="text/javascript">
         TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_lg_222x54.png", "POSDV", "none");
-    </script>
+    </script> -->
 
 </body>
 

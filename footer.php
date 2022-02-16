@@ -6,20 +6,16 @@
 									<div class="contact-us">
 										<h4>Contact us</h4>
 										<address>
-										    Head Office:-<br>
-										    Mithapur, Bus Stand, Bypass Road, Bighrapur, Near Ravindra Utsav Hall, Patna-800001<br><br>
-										    
-										    Reg Off:-<br>
-											Plot No. 594 Ward No. 10 Vill- Moti Bigha Post- Gonawan, Nawada (Bihar)-805110<br>
-											
+										    Office:-<br>
+										    Patna-800001<br><br>
 										</address>
 										<address>
 										 	<span>Email :</span> 
-											<a href="mailto:info@apbiharpower.in">info@apbiharpower.in</a> 
+											<a href="mailto:info@sashaktvihar.com">info@sashaktvihar.com</a> 
 										</address>
 										<address>
 										 	<span>Phones :</span> 
-											C.M.D:-<br>&nbsp;&nbsp;<a href="tel:+919608255314">+91 9608255314</a><br>
+											&nbsp;&nbsp;<a href="tel:+917667105622">+91 7667105622</a><br>
 										</address>
 									</div>									
 								</div>
