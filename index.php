@@ -89,7 +89,7 @@ include 'db.php';
                                         <h1>Quick Service, Quality Work &amp; Be Happy...
                                         </h1>
 
-                                        <a class="btn" href="about.html">Learn More</a>
+                                        <a class="btn" href="about.php">Learn More</a>
                                     </div>
                                 </div>
                                 <div class="item">
