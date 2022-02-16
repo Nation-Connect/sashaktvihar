@@ -105,11 +105,11 @@ include 'db.php';
 									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
 										<ul class="social">
 											<li>Chief managing director <br>
-												Mr. Chandan Kumar</li>
+												Mr. Kumar</li>
 
 										</ul>
 										<span class="transition">
-											<h2>Mr. Chandan Kumar <em>C.M.D</em></h2>
+											<h2>Mr. Kumar <em>C.M.D</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
@@ -118,11 +118,11 @@ include 'db.php';
 									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
 										<ul class="social">
 											<li> Senior-HR <br>
-												Mrs. Kumari shweta</li>
+												Mrs. Kumari</li>
 										</ul>
 
 										<span class="transition">
-											<h2>Mrs. Kumari shweta <em>Senior-HR</em></h2>
+											<h2>Mrs. Kumari <em>Senior-HR</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
@@ -131,10 +131,10 @@ include 'db.php';
 									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
 										<ul class="social">
 											<li> Project Manager <br>
-												Mr. Arvind Kumar</li>
+												Mr. Kumar</li>
 										</ul>
 										<span class="transition">
-											<h2>Mr. Arvind Kumar <em>Project Manager</em></h2>
+											<h2>Mr. Kumar <em>Project Manager</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
