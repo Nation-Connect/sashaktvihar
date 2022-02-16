@@ -357,17 +357,11 @@ position:relative;
 	height:15em;
 }
 .img-team {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-border-bottom-left-radius: 0;
-	border-bottom-left-radius: 0;
-	-moz-border-radius-bottomleft: 0;
 	height:95%;
 	width:auto;
 	margin:0 auto;
 	position:relative;
-	padding:5px;
+	padding:3px;
 	border:1px solid #ccc;
 	margin-top:-7.5em;
 	background:#FFF;
