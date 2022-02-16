@@ -44,9 +44,10 @@
 						            <div class="logo footer-logo">
 						                <a title="sashaktvihar" href="index.php">
 						                    <!--<img src="img/logo1.png" alt="Anjali & Poonam Power Services Pvt. Ltd.">-->
-						                    <h4>Anjali & Poonam Power Services Pvt. Ltd.</h4>
+						                    <h4>Sashakt Vihar Construction & Security Pvt. Ltd.</h4>
 						                </a>
-						                <p>Anjali & Poonam Power Services Pvt. Ltd. is one the leading power maintenance services providing company in Bihar. We provide 24*7  technical support services to provide you uninterrupted electrical supply.</p>
+						                <p>Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading 
+											Construction & Power Maintenance Services Providing Company In Bihar.</p>
 						            </div>									
 								</div>
 								
@@ -60,7 +61,7 @@
 							<div class="footer">
 								<div class="col-md-8 col-xs-12 col-sm-8">
 									<div class="copyright">
-										<p>Copyright 2019. Anjali & Poonam Power Services Pvt. Ltd. | Developed by <a href="https://nationconnect.in/">Nation Connect</a></p>
+										<p>Copyright 2022. Sashakt Vihar Construction & Security Pvt. Ltd. | Developed by <a href="https://nationconnect.in/">Nation Connect</a></p>
 									</div>
 								</div>
 								

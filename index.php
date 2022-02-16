@@ -379,7 +379,7 @@ include 'db.php';
                                     <h2>Let's wow you!</h2>
                                     <p>Ready to take it a step further? Let’s start talking about your indoor power
                                         maintenance. We can help you.</p>
-                                    <a class="btn" href="contact.html">Request a Quote</a>
+                                    <a class="btn" href="contact.php">Request a Quote</a>
                                 </div>
                                 <!--quote-->
                             </div>
@@ -402,8 +402,6 @@ include 'db.php';
 
                 <?php include 'footer.php'; ?>
                 <!-- .container-->
-
-
             </div>
             <!--content-wrapper-->
         </div>
