@@ -148,7 +148,6 @@ include 'db.php';
                                     //echo "<img src='img/nojob.png' style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
                                     //echo "not found";
                                 }
-
                                 ?>
                             </div>
                         </div>
@@ -250,8 +249,6 @@ include 'db.php';
                     </div>
                     <!-- .row-->
                 </div>
-
-
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -279,9 +276,6 @@ include 'db.php';
                     </div>
                     <!-- .row-->
                 </div>
-
-
-
                 <div class="container gek-content-padd">
                     <div class="row gek-content">
                         <div class="teamhead">
@@ -351,7 +345,6 @@ include 'db.php';
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-
                     </div>
                 </div><br><br><br>
                 <!-- .container-->
