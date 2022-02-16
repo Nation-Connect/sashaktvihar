@@ -6,7 +6,7 @@
 									<div class="contact-us">
 										<h4>Contact us</h4>
 										<address>
-										    Office:-<br>
+										<span>Office :</span>
 										    Patna-800001<br><br>
 										</address>
 										<address>
@@ -15,7 +15,7 @@
 										</address>
 										<address>
 										 	<span>Phones :</span> 
-											&nbsp;&nbsp;<a href="tel:+917667105622">+91 7667105622</a><br>
+										a href="tel:+917667105622">+91 7667105622</a><br>
 										</address>
 									</div>									
 								</div>
