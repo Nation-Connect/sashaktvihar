@@ -3,12 +3,12 @@
         <div class="col-md-9 col-xs-12 col-sm-9">
             <div class="logo">
                 <a title="sashaktvihar" href="index.php">
-                    <img class="mainlogo" src="img/logo5.png" width="20%" alt="Anjali & Poonam Power Services Pvt. Ltd.">
+                    <img class="mainlogo" src="img/logo5.png" width="20%" alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;margin-left:30px;" width="20%"
-                        alt="Anjali & Poonam Power Services Pvt. Ltd.">
+                        alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;float:right;" width="18%"
-                        alt="Anjali & Poonam Power Services Pvt. Ltd.">
-                    <!--<h3> Anjali & Poonam Power Services Pvt. Ltd.</h3>-->
+                        alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
+                    <!--<h3> Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.</h3>-->
                 </a>
             </div>
         </div>
