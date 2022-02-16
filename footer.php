@@ -7,7 +7,7 @@
 										<h4>Contact us</h4>
 										<address>
 										<span>Office :</span>
-										    Patna-800001<br><br>
+										    Patna-800001<br>
 										</address>
 										<address>
 										 	<span>Email :</span> 
