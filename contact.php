@@ -85,7 +85,7 @@ include 'db.php';
 						<div class="col-md-12">
 							<div class="map-head">
 								<h2>Location on map</h2><br>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.5460285950735!2d85.5361011143212!3d24.913462149268394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2fe94d1e60e8d%3A0xcfc339a191d4c107!2sMaruti%20Clinik%20Moti%20Bigha!5e0!3m2!1sen!2sin!4v1572644079277!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115133.01016881724!2d85.07300167526476!3d25.608020764115338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1645116994498!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 							</div>
 						</div>
 						<!-- .col-md-12-->
@@ -99,7 +99,7 @@ include 'db.php';
 							<div class="col-md-8 col-xs-12 col-sm-8">
 								<div class="main-contact-form">
 									<h4>Contact</h4><br>
-									<form action="mail.php" method="POST">
+									<form action="#" method="POST">
 										<input type="text" id="full-name" name="name" placeholder="Name" required>
 										<input type="email" id="email" name="email" placeholder="Email" required>
 										<input type="text" id="subject" name="subject" placeholder="Subject">
@@ -112,38 +112,33 @@ include 'db.php';
 							<div class="col-md-4 col-xs-12 col-sm-4">
 								<div class="office-location">
 									<div class="contact-us head-office">
-										<h4>Reg. Office</h4>
+										<h4>Address</h4>
 										<address>
-											Plot No. 594 Ward No. 10 Vill- Moti Bigha Post- Gonawan, Nawada (Bihar)-805110<br><br>
-											Branch Office:-<br>Mahendra workshop Maghra Gufapar, Parbalpur Road, Biharsharif, Nalanda (Bihar)-803101
+											Patna<br><br>
 										</address>
 										<address>
 											<span>Email :</span>
-											<a href="mailto:info@apbiharpower.in">info@apbiharpower.in</a>
+											<a href="mailto:info@sashaktvihar.com">info@sashaktvihar.com</a> 
 										</address>
 										<address>
 											<span>Phones :</span>
-											C.M.D:-<br>&nbsp;&nbsp;<a href="tel:+919608255314">+91 9608255314</a><br>
+											<a href="tel:+917667105622">+91 7667105622</a><br>
 										</address>
 									</div>
-									<div class="contact-us newyork-office">
+									<!-- <div class="contact-us newyork-office">
 										<h4>Branch Office</h4>
 										<address>
 											Mahendra workshop Maghra Gufapar, Parbalpur Road, Biharsharif, Nalanda (Bihar)-803101
 										</address>
 
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
 				<?php include 'footer.php'; ?>
 				<!-- .container-->
-
-
 			</div>
 			<!--content-wrapper-->
 		</div>
@@ -154,15 +149,10 @@ include 'db.php';
 	</div>
 	<!-- #wrapper -->
 
-
 	<!-- =========================================
 		JAVASCRIPT
 		========================================== -->
 
 	<?php include 'foot.php'; ?>
-
-
-
 </body>
-
 </html>
