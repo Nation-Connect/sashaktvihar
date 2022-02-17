@@ -1,7 +1,6 @@
 <div class="container">
 	<div class="row">
 		<div class="footer-top">
-
 			<div class="col-md-5 col-sm-6">
 				<div class="contact-us">
 					<h4>Contact us</h4>
@@ -45,9 +44,6 @@
 						Construction & Power Maintenance Services Providing Company In Bihar.</p>
 				</div>
 			</div>
-
-
-
 		</div>
 		<!-- .footer-top-->
 	</div>
@@ -59,7 +55,6 @@
 					<p>Copyright 2022. Sashakt Vihar Construction & Security Pvt. Ltd. | Developed by <a href="https://nationconnect.in/">Nation Connect</a></p>
 				</div>
 			</div>
-
 		</div>
 		<!-- .footer-->
 	</div>
