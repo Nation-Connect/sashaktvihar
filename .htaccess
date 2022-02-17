@@ -1,18 +1,18 @@
 #Rewrite everythings to https
 
 RewriteEngine On
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile /home2/gncfjqmy/public_html/sashaktvihar.com/.htpasswd
-<Files "*">
-Require valid-user
-ErrorDocument 401 "<html><meta http-equiv=\"refresh\" content=\"0;url=/comming-soon.html\"></html>"
-</Files>
+#AuthType Basic
+#AuthName "Password Protected Area"
+#AuthUserFile /home2/gncfjqmy/public_html/sashaktvihar.com/.htpasswd
+#<Files "*">
+#Require valid-user
+#ErrorDocument 401 "<html><meta http-equiv=\"refresh\" content=\"0;url=/comming-soon.html\"></html>"
+#</Files>
 
-<Files "comming-soon.html">
-Allow from all 
-Satisfy any
-</Files>
+#<Files "comming-soon.html">
+#Allow from all 
+#Satisfy any
+#</Files>
 
 RewriteCond %{HTTPS} !on
 RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
