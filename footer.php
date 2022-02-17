@@ -26,10 +26,9 @@
 					<ul>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="about.php">About us</a></li>
-						<li><a href="services.php">Services</a></li>
 						<li><a href="team.php">Our Team</a></li>
 						<li><a href="gallery.php">Gallery</a></li>
-						<li><a href="support.php">Support</a></li>
+						<!-- <li><a href="support.php">Support</a></li> -->
 						<li><a href="contact.php">Contact Us</a></li>
 						<br>
 					</ul>
