@@ -3,8 +3,9 @@
         <div class="col-md-9 col-xs-12 col-sm-9">
             <div class="logo">
                 <a title="sashaktvihar" href="index.php">
+
                     <img class="mainlogo" src="img/logo5.png" width="20%" alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
-                    <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;margin-left:50px;" width="20%"
+                    <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;margin-left:100px;" width="20%"
                         alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;float:right;" width="18%"
                         alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
