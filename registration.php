@@ -1,5 +1,4 @@
 <?php
-
 include 'db.php';
 $id = $_GET["id"];
 if (empty($_GET['id'])) {
@@ -41,12 +40,10 @@ if (empty($_GET['id'])) {
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151393624-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-
 		function gtag() {
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-151393624-1');
 	</script>
 
@@ -65,12 +62,8 @@ if (empty($_GET['id'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-
-
 	<?php include 'head.php'; ?>
-
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
 	<style>
 		.razorpay-payment-button {
 			margin: auto;
@@ -86,14 +79,10 @@ if (empty($_GET['id'])) {
 			margin-top: 50px;
 		}
 	</style>
-
-
 </head>
 <!-- /head -->
 
-
 <body>
-
 	<div class="wrapper" id="wrapper">
 		<div class="offcanvas-pusher">
 			<div class="content-wrapper">
@@ -359,9 +348,9 @@ if (empty($_GET['id'])) {
 										</div>
 
 									</div>
-									<script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_live_qfZTHJ6CFHUMc0" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
+									<!-- <script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_live_qfZTHJ6CFHUMc0" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
 
-									</script>
+									</script> -->
 									<input type="hidden" name="regsucess">
 									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
@@ -378,17 +367,12 @@ if (empty($_GET['id'])) {
 					<!-- .row-->
 				</div>
 				<!-- .container-->
-
-
 				<?php include 'footer.php'; ?>
 				<!-- .container-->
-
-
 			</div>
 			<!--content-wrapper-->
 		</div>
 		<!-- offcanvas-pusher -->
-
 		<?php include 'mobilemenu.php'; ?>
 		<!-- offcanvas-menu end -->
 	</div>
@@ -400,20 +384,16 @@ if (empty($_GET['id'])) {
 		========================================== -->
 
 	<?php include 'foot.php'; ?>
-
 	<script>
 		function readURL(input) {
 			if (input.files && input.files[0]) {
 				var reader = new FileReader();
-
 				reader.onload = function(e) {
 					$('#blah').attr('src', e.target.result);
 				}
-
 				reader.readAsDataURL(input.files[0]);
 			}
 		}
-
 		$("#imageUpload").change(function() {
 			readURL(this);
 		});
@@ -444,12 +424,11 @@ if (empty($_GET['id'])) {
 				alert("Please Upload Image");
 				return false;
 			}
-
 		}
 	</script>
 
 	<script>
-		$(".razorpay-payment-button").click(function() {
+		$(".razorpay-payment-").click(function() {
 
 			uplodeimgcheck();
 			var fame = $('#rfname').val();
@@ -463,7 +442,6 @@ if (empty($_GET['id'])) {
 
 		});
 	</script>
-
 </body>
 
 </html>
