@@ -1632,7 +1632,7 @@ offcanvas-menu
   Section-quote style
 ---------------------------------------------*/
 .quote-section{
-  background: url(../img/quote-bg.jpg)no-repeat scroll center 0;
+  background: url(../img/quote-bg.png)no-repeat scroll center 0;
   height:400px;
 }
 .quote{
