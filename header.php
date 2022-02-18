@@ -4,7 +4,7 @@
             <div class="logo">
                 <a title="sashaktvihar" href="index.php">
 
-                    <img class="mainlogo" src="img/logo5.png" width="20%" alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
+                    <img class="mainlogo" src="img/logo1.jpg" width="20%" alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;margin-left:150px;margin-right:50px;" width="20%"
                         alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;float:right;" width="18%"
