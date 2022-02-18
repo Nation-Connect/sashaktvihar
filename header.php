@@ -5,9 +5,9 @@
                 <a title="sashaktvihar" href="index.php">
 
                     <img class="mainlogo" src="img/logo1.jpg" width="60%" alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
-                    <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;margin-left:150px;margin-right:50px;" width="20%"
+                    <img class="swachhbharat" src="img/swachhbharat.png" style="display: inline-block;float:right;" width="20%"
                         alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
-                    <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;float:right;" width="18%"
+                    <img class="makeinindia" src="img/makeinindia.png" style="display: inline-block;" width="18%"
                         alt="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.">
                     <!--<h3> Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd.</h3>-->
                 </a>
