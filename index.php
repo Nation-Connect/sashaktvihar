@@ -34,7 +34,7 @@ include 'db.php';
 	    Basic
 	    ========================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sashakt Vihar Construction & Security Pvt. Ltd.</title>
+    <title>Nav Sashakt Vihar Construction & Security Pvt. Ltd.</title>
     <meta name="keywords" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
     <meta name="author" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
     <meta name="description" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
