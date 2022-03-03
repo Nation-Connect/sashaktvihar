@@ -297,39 +297,39 @@ include 'db.php';
                                 <div class="item active">
                                     <div class="col-md-4 col-xs-6 teamitem item">
                                         <div class="teamitem-inner">
-                                            <div class="img-team-outer"><img src="img/default-pic.jpg" class="img-responsive img-team" height="600" width="600" />
+                                            <div class="img-team-outer"><img src="img/team/cmd.jpeg" class="img-responsive img-team" height="600" width="600" />
                                             </div>
-                                            <p class="team-name">Mr. Kumar</p>
+                                            <p class="team-name">Mr. Pinku Kumar</p>
                                             <div class="ourteambtborder"></div>
                                             <p class="team-wichmagazine">C.M.D</p>
                                             <hr />
                                             <p class="team-contactdata"><i class="fa fa-phone"></i> +91
-                                                960xxxxxxx<br /> <i class="fa fa-envelope"></i> you@yourmail.com</p>
+                                                7667105622<br /> <i class="fa fa-envelope"></i> connecttopinku@gmail.com</p>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-xs-6 teamitem item">
                                         <div class="teamitem-inner">
-                                            <div class="img-team-outer"><img src="img/default-pic.jpg" class="img-responsive img-team" height="600" width="600" />
+                                            <div class="img-team-outer"><img src="img/team/hr.png" class="img-responsive img-team" height="600" width="600" />
                                             </div>
-                                            <p class="team-name">Mrs. Kumari</p>
+                                            <p class="team-name">Mrs. Mamta Sinha</p>
                                             <div class="ourteambtborder"></div>
                                             <p class="team-wichmagazine">Senior-HR</p>
                                             <hr />
                                             <p class="team-contactdata"><i class="fa fa-phone"></i> +91 960xxxxxxx
-                                                2121<br /><i class="fa fa-envelope"></i> you@yourmail.com</p>
+                                                <br /><i class="fa fa-envelope"></i> info@sashaktvihar.com</p>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-xs-6 teamitem item">
                                         <div class="teamitem-inner">
-                                            <div class="img-team-outer"><img src="img/default-pic.jpg" class="img-responsive img-team" height="600" width="600" />
+                                            <div class="img-team-outer"><img src="img/team/pm.jpeg" class="img-responsive img-team" height="600" width="600" />
                                             </div>
-                                            <p class="team-name">Mrs. Kumari</p>
+                                            <p class="team-name">Mr. Manjeet Shambhu</p>
                                             <div class="ourteambtborder"></div>
                                             <p class="team-wichmagazine">Project Manager</p>
                                             <hr />
-                                            <p class="team-contactdata"><i class="fa fa-phone"></i>+91 960xxxxxxx<br /><i class="fa fa-envelope"></i> you@yourmail.com </p>
+                                            <p class="team-contactdata"><i class="fa fa-phone"></i>+91 9065999368<br /><i class="fa fa-envelope"></i> manjitvihar01@gmail.com </p>
                                         </div>
                                     </div>
                                 </div>

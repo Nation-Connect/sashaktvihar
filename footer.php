@@ -14,7 +14,7 @@
 					</address>
 					<address>
 						<span>Phones :</span>
-						<a href="tel:+917667105622">+91 7667105622</a><br>
+						<a href="tel:+919470868348">+91 9470868348</a><br>
 					</address>
 				</div>
 			</div>

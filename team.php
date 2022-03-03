@@ -102,39 +102,39 @@ include 'db.php';
 							<!-- ********* <3 ********* ONE ********* <3 ********* -->
 							<ul class="one">
 								<li class="transition">
-									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
+									<div class="wrapper"> <img class="transition" src="img/team/cmd.jpeg">
 										<ul class="social">
 											<li>Chief managing director <br>
-												Mr. Kumar</li>
+											Mr. Pinku Kumar</li>
 
 										</ul>
 										<span class="transition">
-											<h2>Mr. Kumar <em>C.M.D</em></h2>
+											<h2>Mr. Pinku Kumar <em>C.M.D</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
 								</li>
 								<li class="transition">
-									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
+									<div class="wrapper"> <img class="transition" src="img/team/hr.png">
 										<ul class="social">
 											<li> Senior-HR <br>
-												Mrs. Kumari</li>
+												Mrs. Mamta Sinha</li>
 										</ul>
 
 										<span class="transition">
-											<h2>Mrs. Kumari <em>Senior-HR</em></h2>
+											<h2>Mrs. Mamta Sinha <em>Senior-HR</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
 								</li>
 								<li class="transition">
-									<div class="wrapper"> <img class="transition" src="img/default-pic.jpg">
+									<div class="wrapper"> <img class="transition" src="img/team/pm.jpeg">
 										<ul class="social">
 											<li> Project Manager <br>
-												Mr. Kumar</li>
+											Mr. Manjeet Shambhu</li>
 										</ul>
 										<span class="transition">
-											<h2>Mr. Kumar <em>Project Manager</em></h2>
+											<h2>Mr. Manjeet Shambhu<em>Project Manager</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
