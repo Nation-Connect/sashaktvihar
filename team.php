@@ -115,7 +115,7 @@ include 'db.php';
 									</div>
 								</li>
 								<li class="transition">
-									<div class="wrapper"> <img class="transition" src="img/team/hr.png">
+									<div class="wrapper"> <img class="transition" src="img/team/hr.jpg">
 										<ul class="social">
 											<li> Senior-HR <br>
 												Mrs. Mamta Sinha</li>

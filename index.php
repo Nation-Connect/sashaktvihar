@@ -310,7 +310,7 @@ include 'db.php';
 
                                     <div class="col-md-4 col-xs-6 teamitem item">
                                         <div class="teamitem-inner">
-                                            <div class="img-team-outer"><img src="img/team/hr.png" class="img-responsive img-team" height="600" width="600" />
+                                            <div class="img-team-outer"><img src="img/team/hr.jpg" class="img-responsive img-team" height="600" width="600" />
                                             </div>
                                             <p class="team-name">Mrs. Mamta Sinha</p>
                                             <div class="ourteambtborder"></div>
