@@ -51,6 +51,9 @@ include 'db.php';
     $sql = "SELECT * FROM job where status='active' ORDER BY id DESC";
     $result = $conn->query($sql);
 
+    $sqltender = "SELECT * FROM tender where status='active' ORDER BY id DESC";
+    $resulttender = $conn->query($sqltender);
+
     ?>
 </head>
 <!-- /head -->
@@ -126,7 +129,6 @@ include 'db.php';
                                 $slideresult = $conn->query($slidersql);
 
                                 if ($slideresult->num_rows > 0) {
-                                    // output data of each row
                                     while ($row = $slideresult->fetch_assoc()) {
                                         echo '<marquee onmouseover="stop()" onmouseout="start()"><h3 class="marh3"  style="color:#515253;padding:10px;">' . $row["data"] . '</h3></marquee>';
                                     }
@@ -140,7 +142,6 @@ include 'db.php';
                                 $slidersql = "SELECT * FROM textslider where id = 2";
                                 $slideresult = $conn->query($slidersql);
                                 if ($slideresult->num_rows > 0) {
-                                    // output data of each row
                                     while ($row = $slideresult->fetch_assoc()) {
                                         echo '<marquee class="marh31" scrolldelay="100" onmouseover="stop()" onmouseout="start()"><h3 style="color:#515253;padding-top:5px;">' . $row["data"] . '</h3></marquee>';
                                     }
@@ -166,6 +167,7 @@ include 'db.php';
                                         <!--<li>Service Doese Matter</li>-->
                                         <li role="presentation" class="active"><a href="#residential" aria-controls="residential" role="tab" data-toggle="tab">Job
                                                 Vacancies</a></li>
+                                        <li role="presentation"><a href="#commercial" aria-controls="commercial" role="tab" data-toggle="tab">Tender</a></li>
                                     </ul>
                                 </center>
                             </div>
@@ -176,10 +178,40 @@ include 'db.php';
                                             <div class="container">
                                                 <div class="row">
                                                     <?php
-                                                    $result = $conn->query($sql);
                                                     if ($result->num_rows > 0) {
                                                         // output data of each row
                                                         while ($row = $result->fetch_assoc()) {
+                                                    ?>
+                                                            <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;height:250px;">
+                                                                <a href="terms.php?id=<?php echo $row["id"]; ?>" class="text-body">
+                                                                    <div class="card bg-warning mb-3" style="padding: 15px;">
+                                                                        <div class="card-body">
+                                                                            <img src="img/job-opportunities.png" style="width: 64px;"></br></br>
+                                                                            <h4 style="color: black;"><?php echo $row["title"]; ?></h4>
+                                                                            <button class="btn" href="">Apply Now</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                    <?php }
+                                                    } else {
+                                                        echo "<img src='img/nojob.png'
+                                                        style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="commercial">
+                                    <div class="column">
+                                        <section class="py-5 bg-light text-center">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <?php
+                                                    if ($resulttender->num_rows > 0) {
+                                                        while ($row = $resulttender->fetch_assoc()) {
                                                     ?>
                                                             <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;height:250px;">
                                                                 <a href="terms.php?id=<?php echo $row["id"]; ?>" class="text-body">
@@ -317,7 +349,8 @@ include 'db.php';
                                             <p class="team-wichmagazine">Senior-HR</p>
                                             <hr />
                                             <p class="team-contactdata"><i class="fa fa-phone"></i> +91 960xxxxxxx
-                                                <br /><i class="fa fa-envelope"></i> info@sashaktvihar.com</p>
+                                                <br /><i class="fa fa-envelope"></i> info@sashaktvihar.com
+                                            </p>
                                         </div>
                                     </div>
 
