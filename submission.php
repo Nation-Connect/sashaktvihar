@@ -61,8 +61,8 @@ if (isset($_POST['regsucess'])) {
          VALUES ('', '$postname', '$subpost', '$firstname', '$lastname', '$fathername', '$mothername', '$gender', '$dob', '$pannum', '$aadhaarno', '$mobno', '$email', '$vill', '$post', '$ps', '$block', '$dist', '$state', '$pincode', '$eduq', '$category', '$religion', '$bankname', '$accountno', '$ifsc', '$accounthname', '$img', '$concat_data', '$date', '$token','unread')";
 
 	$sqll = "UPDATE registration SET registration_id = concat( concat_data, id ) where token_id = '$token'";
-	header("Location: submission.php?status=failed");
-	exit();
+	//header("Location: submission.php?status=failed");
+	//exit();
 	if (mysqli_query($conn, $sql)) {
 		if (mysqli_query($conn, $sqll)) {
 			header("Location: submission.php?status=success&token=$token");
