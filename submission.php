@@ -17,12 +17,17 @@ require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/vendor/autoload.php';
 
 if (isset($_POST['regsucess'])) {
+
+	$subpost = "";
+	if (isset($_POST['subpost'])) {
+		foreach ($_POST['subpost'] as $spost){
+			$subpost = $spost.',';
+		}
+	}
 	$postname = $_POST["postname"];
 	$firstname = $_POST["firstname"];
 	$lastname = $_POST["lastname"];
-
 	$name = $firstname . '' . $lastname;
-
 	$fathername = $_POST["fathername"];
 	$mothername = $_POST["mothername"];
 	$gender = $_POST["gender"];
@@ -47,25 +52,19 @@ if (isset($_POST['regsucess'])) {
 	$accounthname = $_POST["accounthname"];
 	$img = addslashes(file_get_contents($_FILES['imag']['tmp_name']));
 
-	$concat_data = "AP" . date("Ymd");
-
+	$concat_data = "SV" . date("Ymd");
 	date_default_timezone_set("Asia/Calcutta");
 	$date = date("Y-m-d h:i:s a");
 
 	$token = uniqid(date("Ymdhis"));
-
-
-	$sql = "INSERT INTO registration(registration_id, postname, firstname, lastname, fathername, mothername, gender, dob, pannum, aadhaarno, mobno, email, vill, post, ps, block, dist, state, pincode, eduq, category, religion, bankname, accountno, ifsc, accounthname, img, concat_data, date, token_id, notify)
-         VALUES ('', '$postname', '$firstname', '$lastname', '$fathername', '$mothername', '$gender', '$dob', '$pannum', '$aadhaarno', '$mobno', '$email', '$vill', '$post', '$ps', '$block', '$dist', '$state', '$pincode', '$eduq', '$category', '$religion', '$bankname', '$accountno', '$ifsc', '$accounthname', '$img', '$concat_data', '$date', '$token','unread')";
-
-
+	$sql = "INSERT INTO registration(registration_id, postname, subpost, firstname, lastname, fathername, mothername, gender, dob, pannum, aadhaarno, mobno, email, vill, post, ps, block, dist, state, pincode, eduq, category, religion, bankname, accountno, ifsc, accounthname, img, concat_data, date, token_id, notify)
+         VALUES ('', '$postname', '$subpost', '$firstname', '$lastname', '$fathername', '$mothername', '$gender', '$dob', '$pannum', '$aadhaarno', '$mobno', '$email', '$vill', '$post', '$ps', '$block', '$dist', '$state', '$pincode', '$eduq', '$category', '$religion', '$bankname', '$accountno', '$ifsc', '$accounthname', '$img', '$concat_data', '$date', '$token','unread')";
 
 	$sqll = "UPDATE registration SET registration_id = concat( concat_data, id ) where token_id = '$token'";
 	header("Location: submission.php?status=failed");
-exit();
+	exit();
 	if (mysqli_query($conn, $sql)) {
 		if (mysqli_query($conn, $sqll)) {
-
 			header("Location: submission.php?status=success&token=$token");
 		} else {
 			header("Location: submission.php?status=failed");
@@ -75,12 +74,8 @@ exit();
 		header("Location: submission.php?status=failed");
 		//echo mysqli_error($conn);
 	}
-
 	mysqli_close($conn);
 }
-
-
-
 
 ?>
 <!DOCTYPE html>
@@ -116,9 +111,9 @@ exit();
 	    ========================================== -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Sashaktvihar.com - Form Submission</title>
-	<meta name="keywords" content="Anjali & Poonam Power Services Pvt. Ltd., Power Maintenance Service, sashaktvihar" />
-	<meta name="author" content="Anjali & Poonam Power Services Pvt. Ltd." />
-	<meta name="description" content="Anjali & Poonam Power Services Pvt. Ltd." />
+	<meta name="keywords" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
+	<meta name="author" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
+	<meta name="description" content="Sashakt Vihar, Sashakt Vihar Construction & Security Pvy. Ltd." />
 
 	<!-- =========================================
 	    Mobile Configurations
@@ -127,16 +122,12 @@ exit();
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
-
 	<?php include 'head.php'; ?>
-
 
 </head>
 <!-- /head -->
 
-
 <body>
-
 	<div class="wrapper" id="wrapper">
 		<div class="offcanvas-pusher">
 			<div class="content-wrapper">
@@ -151,7 +142,6 @@ exit();
 					<!-- .row-->
 				</div>
 				<!-- .container-->
-
 				<div class="breadcrumb-area">
 					<div class="container">
 						<div class="row">
@@ -169,33 +159,27 @@ exit();
 					<!-- .container-->
 				</div>
 				<!-- .breadcrumb-area-->
-
 				<div class="container">
 					<div class="row">
-
-
 						<?php
-
 						error_reporting(E_ALL ^ E_NOTICE);
 						$token = $_GET['token'];
 						if ($_GET['status'] == "success") {
 							echo '<div class="formsubmain">
-								
-                                            						    	<div class="formsubdesc">
-                                            						    	    <center>
-                                            						    	        <img src="img/payment-success.png" width="100px" height="100px" alt="sashaktvihar">
-                                            						    	        <br><br>
-                                            						    	        <h3>Registration Completed Successfully</h3>
-                                            						    	        <p>Please check your email for download submission form</p>
-                                            						    	    </center>
-                                            						    	</div>
-                                            						    	<div class="acceptterm">
-                                            						    	    <center>
-                                            						    	    <a href="pdf.php?token=' . $token . '" target="_blank"><button><i class="fa fa-download" aria-hidden="true"></i> Download</button></a>
-                                            						    	    </center>
-                                            						    	</div>
-                                            						    	
-                                            							</div>';
+									<div class="formsubdesc">
+                                        <center>
+                                            <img src="img/payment-success.png" width="100px" height="100px" alt="sashaktvihar">
+                                            <br><br>
+                                            <h3>Registration Completed Successfully</h3>
+                                            <p>Please check your email for download submission form</p>
+                                        </center>
+                                    </div>
+                                    <div class="acceptterm">
+                                        <center>
+                                            <a href="pdf.php?token=' . $token . '" target="_blank"><button><i class="fa fa-download" aria-hidden="true"></i> Download</button></a>
+                                        </center>
+                                    </div>
+                                </div>';
 
 							$token = $_GET['token'];
 							$regid = "SELECT * FROM registration where token_id = '$token'";
@@ -205,6 +189,7 @@ exit();
 								$date = $row["date"];
 								$img = $row["img"];
 								$postname = $row["postname"];
+								$subpost = $row["subpost"];
 								$firstname = $row["firstname"];
 								$lastname = $row["lastname"];
 
@@ -234,143 +219,113 @@ exit();
 								$accountname = $row["accounthname"];
 							}
 
-
-
-
 							$html = '<div class="regformhead">
-                                                            			<h2 align="center"><strong>ANJALI & POONAM POWER SERVICES PRIVATE LIMITED</strong></h2>
-                                                            		    <h4 align="center">(Power Maintenance Service)</h4>
-                                                            		    <br><hr>
-                                                            		</div>
-                                                            		
-                                                            		<div class="regform">
-                                                            		<div class="sect">
-                                                            		    <div class="fromrightside">
-                                                            		        <div class="regformimg">
-                                                            		        <center>
-                                                            					<img id="blah" style="width:100%;height:180px;" src="data:image/jpeg;base64,' . base64_encode($img) . '"/>
-                                                            				</center>
-                                                            				</div>
-                                                            		    </div>
-                                                            		    
-                                                            		    <div class="formleftside">
-                                                            		        <br>
-                                                            		        <h4 style="margin-bottom:-8px;margin-left:10px;">Registration No.:- &nbsp;' . $registration_id . '</h4>
-                                                            		        <p style="margin-left:10px;">Date:-&nbsp;' . $date . '</p>
-                                                            		        <p style="margin-left:10px;">Post Name:- &nbsp;' . $postname . '</p>
-                                                            		   </div>
-                                                            		   
-                                                            		   </div>
-                                                            		   <div class="fful">
-                                                            		        <h4>Persional Information:- </h4>
-                                                            		        <div class="formdivpi">
-                                                            		            
-                                                            		            <table style="width: 100%;">
-                                                            		            
-                                                            		            <tbody>
-                                                            		            <tr>
-                                                                    					<td style="width: 30%;">Name:- ' . $firstname . ' ' . $lastname . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Fathers Name:- ' . $fathername . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Mothers Name:- ' . $mothername . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                		            <tr>
-                                                                    					<td style="width: 30%;">Gender:- ' . $sex . '</td>
-                                                                    					<td style="width: 30%;">Date of Birth:- ' . $dob . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Aadhaar No.:- ' . $aadhaarno . '</td>
-                                                                    					<td style="width: 30%;">Pan No.:- ' . $panno . '</td>
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Email id:- ' . $email . '</td>
-                                                                    					<td style="width: 30%;">Mobile No.:- ' . $mobno . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				   
-                                                                				</tbody>
-                                                            		            </table>
-                                                            		        </div>
-                                                            		        
-                                                            		        <h4>Permanent Address:- </h4>
-                                                            		        <div class="formdivpi">
-                                                            		        <table style="width: 100%;">
-                                                            		            
-                                                            		            <tbody>
-                                                                		            <tr>
-                                                                    					<td style="width: 30%;">Village:- ' . $vill . '</td>
-                                                                    					<td style="width: 30%;">Post:- ' . $post . '</td>
-                                                                    					<td style="width: 30%;">Ps.:- ' . $ps . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Block:- ' . $block . '</td>
-                                                                    					<td style="width: 30%;">Dist.:- ' . $dist . '</td>
-                                                                    					<td style="width: 30%;">State.:- ' . $state . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Pincode.:- ' . $pincode . '</td>
-                                                                    					
-                                                                    					
-                                                                				    </tr>
-                                                                				    
-                                                                				</tbody>
-                                                            		            </table>
-                                                            		        </div>
-                                                            		        
-                                                            		        <h4>Educational Qualification:- </h4>
-                                                            		        <div class="formdivpi">
-                                                            		        <table style="width: 100%;">
-                                                            		          <tbody>
-                                                                		            <tr>
-                                                                    					<td style="width: 30%;">Edu. Qualification:- ' . $eduq . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 50%;">Category:- ' . $category . '</td>
-                                                                    					<td style="width: 50%;">Religion.:- ' . $religion . '</td>
-                                                                    				
-                                                                				    </tr>
-                                                                				    
-                                                                				</tbody>
-                                                            		            </table>
-                                                            		            
-                                                            		        </div>
-                                                            		        
-                                                            		        <h4>Bank Details:- </h4>
-                                                            		        <div class="formdivpi">
-                                                            		        <table style="width: 100%;">
-                                                            		          <tbody>
-                                                                		            <tr>
-                                                                    					<td style="width: 30%;">Bank Name:- ' . $bankname . '</td>
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 50%;">Account No.:- ' . $accountno . '</td>
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">IFSC Code:- ' . $ifsc . '</td>
-                                                                    					
-                                                                				    </tr>
-                                                                				    <tr>
-                                                                    					<td style="width: 30%;">Account Holder Name:- ' . $accountname . '</td>
-                                                                				    </tr>
-                                                                				</tbody>
-                                                            		            </table>
-                                                            		           </div>
-                                                            		        </div>
-                                                            		        </div>
-                                                            		    
-                                                            		</div>';
-
-
+                                        <h2 align="center"><strong>SASHAKT VIHAR CONSTRUCTION & SECURITY PRIVATE LIMITED</strong></h2>
+                                        <h4 align="center">(Power Maintenance Service)</h4>
+                                        <br><hr>
+                                    </div>
+                                    <div class="regform">
+                                        <div class="sect">
+                                            <div class="fromrightside">
+                                                <div class="regformimg">
+													<center>
+														<img id="blah" style="width:100%;height:180px;" src="data:image/jpeg;base64,' . base64_encode($img) . '"/>
+													</center>
+                                            	</div>
+                                            </div>
+                                            <div class="formleftside">
+                                            	<br>
+                                                <h4 style="margin-bottom:-8px;margin-left:10px;">Registration No.:- &nbsp;' . $registration_id . '</h4>
+                                                <p style="margin-left:10px;">Date:-&nbsp;' . $date . '</p>
+                                                <p style="margin-left:10px;">Post Name:- &nbsp;' . $postname . '</p>
+												<p style="margin-left:10px;">Sub Post:- &nbsp;' . $subpost . '</p>
+                                            </div>
+                                        </div>
+                                        <div class="fful">
+                                            <h4>Persional Information:- </h4>
+                                            <div class="formdivpi">
+                                                 <table style="width: 100%;">
+                                                    <tbody>
+                                                    	<tr>
+                                                            <td style="width: 30%;">Name:- ' . $firstname . ' ' . $lastname . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Fathers Name:- ' . $fathername . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Mothers Name:- ' . $mothername . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Gender:- ' . $sex . '</td>
+                                                        	<td style="width: 30%;">Date of Birth:- ' . $dob . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Aadhaar No.:- ' . $aadhaarno . '</td>
+                                                            <td style="width: 30%;">Pan No.:- ' . $panno . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Email id:- ' . $email . '</td>
+                                                            <td style="width: 30%;">Mobile No.:- ' . $mobno . '</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h4>Permanent Address:- </h4>
+                                            <div class="formdivpi">
+                                                <table style="width: 100%;">
+                                                    <tbody>
+                                                    	<tr>
+                                                            <td style="width: 30%;">Village:- ' . $vill . '</td>
+                                                            <td style="width: 30%;">Post:- ' . $post . '</td>
+                                                            <td style="width: 30%;">Ps.:- ' . $ps . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                    		<td style="width: 30%;">Block:- ' . $block . '</td>
+                                                            <td style="width: 30%;">Dist.:- ' . $dist . '</td>
+                                                            <td style="width: 30%;">State.:- ' . $state . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Pincode.:- ' . $pincode . '</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h4>Educational Qualification:- </h4>
+                                            <div class="formdivpi">
+                                                <table style="width: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width: 30%;">Edu. Qualification:- ' . $eduq . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 50%;">Category:- ' . $category . '</td>
+                                                        	<td style="width: 50%;">Religion.:- ' . $religion . '</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h4>Bank Details:- </h4>
+                                            <div class="formdivpi">
+                                                <table style="width: 100%;">
+                                                	<tbody>
+                                                        <tr>
+                                                            <td style="width: 30%;">Bank Name:- ' . $bankname . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 50%;">Account No.:- ' . $accountno . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">IFSC Code:- ' . $ifsc . '</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width: 30%;">Account Holder Name:- ' . $accountname . '</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>';
 							include('mpdf/mpdf.php');
 							$mpdf = new Mpdf();
 							$stylesheet = file_get_contents('css/pdf.css'); // external css
@@ -379,44 +334,34 @@ exit();
 							$mpdf->setFooter('www.sashaktvihar.com');
 							$mpdf->SetWatermarkImage('img/logopdf.jpg');
 							$mpdf->showWatermarkImage = true;
-
 							$pdf = $mpdf->Output('', "S");
-
 							$mail = new PHPMailer;
-
 							try {
-								//Server settings
 								$mail->SMTPDebug = 0;                      // Enable verbose debug output
 								$mail->isSMTP();                                            // Send using SMTP
-								$mail->Host       = 'mail.apbiharpower.in';                    // Set the SMTP server to send through
+								$mail->Host       = 'mail.sashaktvihar.com';                    // Set the SMTP server to send through
 								$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-								$mail->Username   = 'info@apbiharpower.in';                     // SMTP username
-								$mail->Password   = 'Sugandh@123';                               // SMTP password
+								$mail->Username   = 'info@sashaktvihar.com';                     // SMTP username
+								$mail->Password   = 'Sashaktvihar@123';                               // SMTP password
 								$mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 								$mail->Port       = 587;                                    // TCP port to connect to
 
 								//Recipients
-								$mail->setFrom('info@apbiharpower.in', 'Apbiharpower');
+								$mail->setFrom('info@sashaktvihar.com', 'Sashakt Vihar');
 								$mail->addAddress($email, $name);     // Add a recipient
-								$mail->addReplyTo('apbiharpower@gmail.com', 'Apbiharpower');
-								//$mail->addCC('cc@example.com');
-								//$mail->addBCC('bcc@example.com');
-
-								// Attachments
-								//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-								//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+								$mail->addReplyTo('info@sashaktvihar.com', 'Sashakt Vihar');
 
 								// Content
 								$mail->isHTML(true);                                  // Set email format to HTML
 								$mail->Subject = 'Registration details';
-								$mail->Body    = 'Hello <b>' . $name . '</b>,<br><br>&nbsp;We have received your registration information we will reach out to you shortly with the final details. Thanks again for registering and welcome to apbiharpower.in';
+								$mail->Body    = 'Hello <b>' . $name . '</b>,<br><br>&nbsp;We have received your registration information we will reach out to you shortly with the final details. Thanks again for registering and welcome to sashaktvihar.com';
 								$mail->addStringAttachment($pdf, $registration_id . '.pdf');
 								$mail->send();
 
 								$mail->ClearAddresses();
 								$mail->ClearReplyTos();
 								$mail->addReplyTo($email, $name);
-								$mail->addAddress('info@apbiharpower.in', 'Apbiharpower');
+								$mail->addAddress('info@sashaktvihar.com', 'Sashakt Vihar');
 								$mail->Subject = 'New Registration';
 								$mail->Body    = 'New registration please check attachement';
 								$mail->addStringAttachment($pdf, $registration_id . '.pdf');
@@ -427,45 +372,26 @@ exit();
 								echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 							}
 						} else if ($_GET['status'] == "failed") {
-							echo '	<div class="formsubmain">
-								
-                                    						    	<div class="formsubdesc">
-                                    						    	    <center>
-                                    						    	        <img src="img/Oops-Something-went-wrong.png" alt="sashaktvihar">
-                                    						    	        
-                                    						    	    </center>
-                                    						    	</div>
-                                    						    	<div class="acceptterm">
-                                    						    	    
-                                    						    	    <a href="https://sashaktvihar.com/"><button>Go to Home</button></a>
-                                    						    	    
-                                    						    	</div>
-                                    						    	
-                                    							</div>';
+							echo '<div class="formsubmain">
+									<div class="formsubdesc">
+                                    	<center>
+                                    		<img src="img/Oops-Something-went-wrong.png" alt="sashaktvihar">
+                                    	</center>
+                                    </div>
+									<div class="acceptterm">
+										<a href="https://sashaktvihar.com/"><button>Go to Home</button></a>
+									</div>
+                                </div>';
 						} else {
 						}
-
-
 						?>
-
-
-
-
-
-
-
-
 						<br><br>
 					</div>
 					<!-- .row-->
 				</div>
 				<!-- .container-->
-
-
 				<?php include 'footer.php'; ?>
 				<!-- .container-->
-
-
 			</div>
 			<!--content-wrapper-->
 		</div>

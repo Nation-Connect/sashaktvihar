@@ -158,20 +158,20 @@ if (empty($_GET['id'])) {
 										<div class="formdivpi">
 											<div class="row">
 												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rfname" name="firstname" required>
-													<label>Field Worker: </label>
+													<input type="checkbox" id="rfname" name="subpost[]" value="Field Worker">
+													<label>Field Worker </label>
 												</div>
 												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="lastname" required>
-													<label>Supervisor:</label>
+													<input type="checkbox" id="rlname" name="subpost[]" value="Supervisor">
+													<label>Supervisor</label>
 												</div>
 												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="lastname" required>
-													<label>Block Contractor:</label>
+													<input type="checkbox" id="rlname" name="subpost[]" value="Block Contractor">
+													<label>Block Contractor</label>
 												</div>
 												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="lastname" required>
-													<label>District Contractor:</label>
+													<input type="checkbox" id="rlname" name="subpost[]" value="District Contractor">
+													<label>District Contractor</label>
 												</div>
 											</div>
 										</div>
@@ -340,7 +340,7 @@ if (empty($_GET['id'])) {
 												<h4>Registration Fee details:- </h4>
 											</div><br><br>
 											<ul>
-												<li><b>&#9679; Registration Fee is applicable for every post is Rs 100/-</b></li>
+												<li><b>&#9679; Registration Fee is applicable for every post is Rs 500/-</b></li>
 												<li><b>&#9679; Every candidate have to pay registration fee for applying the job.</b></li>
 											</ul>
 
