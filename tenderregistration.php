@@ -126,7 +126,7 @@ if (empty($_GET['id'])) {
 								<br>
 							</div>
 							<div class="regform">
-								<form method="post" id="jobregform" onsubmit="return uplodeimgcheck()" enctype="multipart/form-data" action="submission.php">
+								<form method="post" id="jobregform" onsubmit="return uplodeimgcheck()" enctype="multipart/form-data" action="tendersubmission.php">
 									<div class="fromrightside">
 										<div class="regformimg">
 											<img id="blah" src="img/image_not_found_thumb.gif" alt="your image" width="100%" height="238px" />
@@ -402,7 +402,6 @@ if (empty($_GET['id'])) {
 			const fi = document.getElementById('imageUpload');
 			if (fi.files.length > 0) {
 				for (const i = 0; i <= fi.files.length - 1; i++) {
-
 					const fsize = fi.files.item(i).size;
 					const file = Math.round((fsize / 1024));
 					// The size of the file. 

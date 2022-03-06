@@ -6,7 +6,7 @@ if(!isset($_SERVER['HTTP_REFERER'])){
 include 'db.php';
 
  $token = $_GET['token'];
- $regid = "SELECT * FROM registration where token_id = '$token'";
+ $regid = "SELECT * FROM tenderregistration where token_id = '$token'";
  $result = $conn->query($regid);
     while($row = $result->fetch_assoc()) {
     $registration_id = $row["registration_id"];
