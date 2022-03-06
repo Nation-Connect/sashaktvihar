@@ -99,7 +99,7 @@ include 'db.php';
 							<div class="col-md-8 col-xs-12 col-sm-8">
 								<div class="main-contact-form">
 									<h4>Contact</h4><br>
-									<form action="#" method="POST">
+									<form action="mail.php" method="POST">
 										<input type="text" id="full-name" name="name" placeholder="Name" required>
 										<input type="email" id="email" name="email" placeholder="Email" required>
 										<input type="text" id="subject" name="subject" placeholder="Subject">
