@@ -217,7 +217,7 @@ include 'db.php';
                                                                 <a href="terms.php?id=<?php echo $row["id"]; ?>" class="text-body">
                                                                     <div class="card bg-warning mb-3" style="padding: 15px;">
                                                                         <div class="card-body">
-                                                                            <img src="img/auction.png" style="width: 64px;"></br></br>
+                                                                            <img src="img/commitment.png" style="width: 64px;"></br></br>
                                                                             <h4 style="color: black;"><?php echo $row["title"]; ?></h4>
                                                                             <button class="btn" href="">Apply Now</button>
                                                                         </div>
