@@ -420,7 +420,7 @@ if (empty($_GET['id'])) {
 
 	<script>
 		function uplodeimgcheck() {
-			if ($('#imageUpload').get(0).files.length === 0 && $('#accounthname').val != '') {
+			if ($('#imageUpload').get(0).files.length === 0 && $('#imageUpload').val != '') {
 				alert("Please Upload Image");
 				return false;
 			}
