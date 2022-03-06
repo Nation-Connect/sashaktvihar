@@ -22,7 +22,7 @@ if (isset($_POST['regsucess'])) {
 			$subpostarray[] = $spost;
 		}
 	}
-	$subpost = implode(",",$subpostarray);
+	$subpost = implode(", ",$subpostarray);
 	$postname = $_POST["postname"];
 	$firstname = $_POST["firstname"];
 	$lastname = $_POST["lastname"];
