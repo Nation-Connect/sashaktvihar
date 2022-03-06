@@ -354,9 +354,9 @@ if (empty($_GET['id'])) {
 									<input type="hidden" name="regsucess">
 									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
-									<!--<center>-->
-									<!--    <input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>-->
-									<!--</center>-->
+									<center>
+										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>-->
+									</center>
 								</form>
 
 							</div>
