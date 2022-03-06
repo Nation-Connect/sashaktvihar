@@ -1,9 +1,8 @@
 <?php
 if(!isset($_SERVER['HTTP_REFERER'])){
-           header("Location: http://apbiharpower.in"); 
-             exit();
-         }
-         
+    header("Location: http://sashaktvihar.com"); 
+    exit();
+}
 include 'db.php';
 
  $token = $_GET['token'];
@@ -14,6 +13,7 @@ include 'db.php';
     $date = $row["date"];
     $img = $row["img"];
     $postname = $row["postname"];
+	$subpost = $row["subpost"];
     $firstname = $row["firstname"];
     $lastname = $row["lastname"];
     $fathername = $row["fathername"];
@@ -44,7 +44,7 @@ $conn->close();
 
 
 $html = '<div class="regformhead">
-			<h2 align="center"><strong>ANJALI & POONAM POWER SERVICES PRIVATE LIMITED</strong></h2>
+			<h2 align="center"><strong>SASHAKT VIHAR CONSTRUCTION & SECURITY PRIVATE LIMITED</strong></h2>
 		    <h4 align="center">(Power Maintenance Service)</h4>
 		    <br><hr>
 		</div>
@@ -64,6 +64,7 @@ $html = '<div class="regformhead">
 		        <h4 style="margin-bottom:-8px;margin-left:10px;">Registration No.:- &nbsp;'.$registration_id.'</h4>
 		        <p style="margin-left:10px;">Date:-&nbsp;'.$date.'</p>
 		        <p style="margin-left:10px;">Post Name:- &nbsp;'.$postname.'</p>
+				<p style="margin-left:10px;">Sub Post:- &nbsp;' . $subpost . '</p>
 		   </div>
 		   
 		   </div>
@@ -189,4 +190,3 @@ $mpdf->showWatermarkImage = true;
 $mpdf->Output($registration_id.'.pdf', D);   
 exit;
 echo "<script>window.close();</script>";
- ?>

@@ -13,17 +13,16 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
-
 require 'PHPMailer/vendor/autoload.php';
 
 if (isset($_POST['regsucess'])) {
-
-	$subpost = "";
+	$subpostarray = array();
 	if (isset($_POST['subpost'])) {
 		foreach ($_POST['subpost'] as $spost){
-			$subpost = $spost.',';
+			$subpostarray[] = $spost;
 		}
 	}
+	$subpost = implode(",",$subpostarray);
 	$postname = $_POST["postname"];
 	$firstname = $_POST["firstname"];
 	$lastname = $_POST["lastname"];
@@ -61,8 +60,6 @@ if (isset($_POST['regsucess'])) {
          VALUES ('', '$postname', '$subpost', '$firstname', '$lastname', '$fathername', '$mothername', '$gender', '$dob', '$pannum', '$aadhaarno', '$mobno', '$email', '$vill', '$post', '$ps', '$block', '$dist', '$state', '$pincode', '$eduq', '$category', '$religion', '$bankname', '$accountno', '$ifsc', '$accounthname', '$img', '$concat_data', '$date', '$token','unread')";
 
 	$sqll = "UPDATE registration SET registration_id = concat( concat_data, id ) where token_id = '$token'";
-	//header("Location: submission.php?status=failed");
-	//exit();
 	if (mysqli_query($conn, $sql)) {
 		if (mysqli_query($conn, $sqll)) {
 			header("Location: submission.php?status=success&token=$token");
