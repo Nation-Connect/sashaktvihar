@@ -46,7 +46,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.php">Home</a></li>
                     <!-- <li><a href="services.php">Services</a></li> -->
-                    <li class="dropdown"><a href="services.php">Services</a>
+                    <li class="dropdown"><a href="#">Services</a>
                         <ul class="dropdown-menu">
                             <?php
                             $navsql = "SELECT * FROM job where status='active' ORDER BY id DESC";
