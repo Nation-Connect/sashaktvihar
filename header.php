@@ -60,15 +60,12 @@
                         </ul>
                     </li>
                     <li><a href="team.php">Our Team</a></li>
-
                     <li><a href="gallery.php">Gallery</a></li>
                     <!-- <li><a href="support.php">Support</a></li> -->
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
                 <!-- /navbar-nav -->
-
-
             </nav>
             <!-- /navbar-collapse -->
         </div>
