@@ -359,7 +359,7 @@ $razorpayOrderId = $razorpayOrder->id;
                                         data-buttontext="SUBMIT"
                                         data-name="Sashakt Vihar"
                                         data-description="Sashakt Vihar Construction & Security Pvt. Ltd."
-                                        data-image="img/logo1.png"
+                                        data-image="img/logo1.jpeg"
                                         data-order_id="<?php echo $razorpayOrderId; ?>"
                                         data-theme.color="#E96220">
                                         
@@ -440,6 +440,21 @@ $razorpayOrderId = $razorpayOrder->id;
 			}
 		}
 	</script>
+	<script>
+            $(".razorpay-payment-button").click(function(){
+                
+                    uplodeimgcheck();
+                    var fame=$('#rfname').val();
+                    var lame=$('#rlname').val();
+                    var name=fname+' '+lname;
+                    var email=$('#remail').val();
+                    var phone=$('#rphone').val();
+                    $('#pay').attr('data-prefill.name', name);
+                    $('#pay').attr('data-prefill.email', email);
+                    $('#pay').attr('data-prefill.contact', phone);
+                
+            });
+        </script>
 </body>
 
 </html>
