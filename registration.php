@@ -13,27 +13,13 @@ use Razorpay\Api\Api;
 $api = new Api($keyId, $keySecret);
 
 $orderData = [
-	'receipt'         => 'rcptid_11',
-	'amount'          => 39900, // 39900 rupees in paise
+	'receipt'         => time(),
+	'amount'          => 50000, // 39900 rupees in paise
 	'currency'        => 'INR'
 ];
 
 $razorpayOrder = $api->order->create($orderData);
 $razorpayOrderId = $razorpayOrder['id'];
-
-// include 'Razorpay/razorpay/razorpay/src/Api.php';
-// //$autoloader = require 'Razorpay/razorpay/razorpay/src/Api.php';
-
-// $api_key = 'rzp_live_qfZTHJ6CFHUMc0';
-// $api_secret = 'cARdzwfzCCcb91RVVOccA0sc';
-
-// $api = new Api($api_key, $api_secret);
-
-// $order  = $client->order->create([
-//       'receipt'         => 'order_rcptid_123',
-//       'amount'          => 100, // amount in the smallest currency unit
-//       'currency'        => 'INR',// <a href="/docs/payment-gateway/payments/international-payments/#supported-currencies" target="_blank">See the list of supported currencies</a>.)
-//     ]);
 
 ?>
 <!DOCTYPE html>
