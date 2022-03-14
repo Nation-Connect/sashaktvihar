@@ -134,7 +134,7 @@ $razorpayOrderId = $razorpayOrder->id;
 										</div>
 										<center>
 											<label for="imageUpload" class="imgupbtn">Upload Image</label>
-											<input type="file" id="imageUpload" accept="image/*" style="display: none" name="imag" onchange="Filevalidation()">
+											<input type="file" id="imageUpload" accept="image/*" style="display: none" name="imag" onchange="Filevalidation()" required>
 											<p style="margin-top:-5px;">(max-size:- 80kb)</p>
 										</center>
 									</div>
