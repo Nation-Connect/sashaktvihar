@@ -460,7 +460,7 @@ $razorpayOrderId = $razorpayOrder['id'];
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
-    $('body').on('click', '#rzp-button', function(e) {
+    $('body').on('submit', '#jobregform', function(e) {
         e.preventDefault();
 		uplodeimgcheck();
             var options = {
