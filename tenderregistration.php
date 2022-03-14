@@ -10,6 +10,7 @@ require('config.php');
 require('razorpay-php/Razorpay.php');
 
 use Razorpay\Api\Api;
+
 $api = new Api($keyId, $keySecret);
 
 $orderData = [
@@ -159,21 +160,23 @@ $razorpayOrderId = $razorpayOrder->id;
 										</div>
 										<div class="formdivpi">
 											<div class="row">
-												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rfname" name="subpost[]" value="Field Worker">
-													<label>Field Worker </label>
-												</div>
-												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="subpost[]" value="Supervisor">
-													<label>Supervisor</label>
-												</div>
-												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="subpost[]" value="Block Contractor">
-													<label>Block Contractor</label>
-												</div>
-												<div class="col-sm-4 col-md-4">
-													<input type="checkbox" id="rlname" name="subpost[]" value="District Contractor">
-													<label>District Contractor</label>
+												<div class="form-group options">
+													<div class="col-sm-4 col-md-4">
+														<input type="checkbox" id="rfname" name="subpost[]" value="Field Worker" required>
+														<label>Field Worker </label>
+													</div>
+													<div class="col-sm-4 col-md-4">
+														<input type="checkbox" id="rlname" name="subpost[]" value="Supervisor" required>
+														<label>Supervisor</label>
+													</div>
+													<div class="col-sm-4 col-md-4">
+														<input type="checkbox" id="rlname" name="subpost[]" value="Block Contractor" required>
+														<label>Block Contractor</label>
+													</div>
+													<div class="col-sm-4 col-md-4">
+														<input type="checkbox" id="rlname" name="subpost[]" value="District Contractor" required>
+														<label>District Contractor</label>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -347,22 +350,11 @@ $razorpayOrderId = $razorpayOrder->id;
 											</ul>
 										</div>
 									</div>
-									<script
-						    	        id="pay"
-                                        src="https://checkout.razorpay.com/v1/checkout.js"
-                                        data-key="<?php echo $keyId; ?>" 
-                                        data-amount="210000"
-                                        data-currency="INR"
-                                        data-buttontext="SUBMIT"
-                                        data-name="Sashakt Vihar"
-                                        data-description="Sashakt Vihar Construction & Security Pvt. Ltd."
-                                        data-image="img/logo1.jpeg"
-                                        data-order_id="<?php echo $razorpayOrderId; ?>"
-                                        data-theme.color="#E96220">
-                                        
-                                    </script>
-                                    <input type="hidden" name="regsucess">
-                                    <input type="hidden" custom="Hidden Element" name="hidden">
+									<script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="<?php echo $keyId; ?>" data-amount="210000" data-currency="INR" data-buttontext="SUBMIT" data-name="Sashakt Vihar" data-description="Sashakt Vihar Construction & Security Pvt. Ltd." data-image="img/logo1.jpeg" data-order_id="<?php echo $razorpayOrderId; ?>" data-theme.color="#E96220">
+
+									</script>
+									<input type="hidden" name="regsucess">
+									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
 									<!-- <center>
 										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
@@ -394,6 +386,18 @@ $razorpayOrderId = $razorpayOrder->id;
 		========================================== -->
 
 	<?php include 'foot.php'; ?>
+	<script>
+		$(function() {
+			var requiredCheckboxes = $('.options :checkbox[required]');
+			requiredCheckboxes.change(function() {
+				if (requiredCheckboxes.is(':checked')) {
+					requiredCheckboxes.removeAttr('required');
+				} else {
+					requiredCheckboxes.attr('required', 'required');
+				}
+			});
+		});
+	</script>
 	<script>
 		function readURL(input) {
 			if (input.files && input.files[0]) {
