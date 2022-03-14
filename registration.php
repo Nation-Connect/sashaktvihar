@@ -364,15 +364,15 @@ $razorpayOrderId = $razorpayOrder['id'];
 										</div>
 
 									</div>
-									<script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_zpYm0jL02q2poD" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
+									<!-- <script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_zpYm0jL02q2poD" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0"> -->
 
 									</script>
 									<input type="hidden" name="regsucess">
 									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
-									<!-- <center>
+									<center>
 										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
-									</center> -->
+									</center>
 								</form>
 
 							</div>
@@ -442,21 +442,39 @@ $razorpayOrderId = $razorpayOrder['id'];
 		}
 	</script>
 
-	<script>
-		$(".razorpay-payment-").click(function() {
-
-			uplodeimgcheck();
-			var fame = $('#rfname').val();
-			var lame = $('#rlname').val();
-			var name = fname + ' ' + lname;
-			var email = $('#remail').val();
-			var phone = $('#rphone').val();
-			$('#pay').attr('data-prefill.name', name);
-			$('#pay').attr('data-prefill.email', email);
-			$('#pay').attr('data-prefill.contact', phone);
-
-		});
-	</script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+    $('body').on('click', '#rzp-button', function(e) {
+        e.preventDefault();
+            var options = {
+                "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
+                "amount": 0, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
+                "currency": "INR",
+                "name": "Sashakt Vihar",
+                "description": "Sashakt Vihar Construction & Security Pvt. Ltd.",
+                "order_id": "<?php echo $razorpayOrderId; ?>", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                "image": "img/logo1.jpeg",
+                "handler": function(response) {
+                    $("#checkoutform").submit();
+                },
+                "theme": {
+                    "color": "#E96220"
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.on('payment.failed', function(response) {
+                alert("Something went wrong")
+                // alert(response.error.code);
+                // alert(response.error.description);
+                // alert(response.error.source);
+                // alert(response.error.step);
+                // alert(response.error.reason);
+                // alert(response.error.metadata.order_id);
+                // alert(response.error.metadata.payment_id);
+            });
+            rzp1.open();
+    });
+    </script>
 </body>
 
 </html>
