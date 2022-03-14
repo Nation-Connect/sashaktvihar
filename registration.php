@@ -6,7 +6,7 @@ if (empty($_GET['id'])) {
 	exit();
 }
 
-require('razorpay/razorpay/Razorpay.php');
+require('vendor/razorpay/razorpay/Razorpay.php');
 
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
