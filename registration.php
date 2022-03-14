@@ -350,11 +350,6 @@ $razorpayOrderId = $razorpayOrder->id;
 										</div>
 
 									</div>
-									<!-- <script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_zpYm0jL02q2poD" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0"> -->
-
-									</script>
-									<input type="hidden" name="regsucess">
-									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
 									<center>
 										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
