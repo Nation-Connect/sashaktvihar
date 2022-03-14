@@ -19,7 +19,7 @@ $orderData = [
 ];
 
 $razorpayOrder = $api->order->create($orderData);
-$razorpayOrderId = $razorpayOrder['id'];
+$razorpayOrderId = $razorpayOrder->id;
 
 ?>
 <!DOCTYPE html>
