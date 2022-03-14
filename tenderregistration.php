@@ -6,19 +6,20 @@ if (empty($_GET['id'])) {
 	exit();
 }
 
-// include 'Razorpay/razorpay/razorpay/src/Api.php';
-// //$autoloader = require 'Razorpay/razorpay/razorpay/src/Api.php';
+require('config.php');
+require('razorpay-php/Razorpay.php');
 
-// $api_key = 'rzp_live_qfZTHJ6CFHUMc0';
-// $api_secret = 'cARdzwfzCCcb91RVVOccA0sc';
+use Razorpay\Api\Api;
+$api = new Api($keyId, $keySecret);
 
-// $api = new Api($api_key, $api_secret);
+$orderData = [
+	'receipt'         => time(),
+	'amount'          => 210000, // 39900 rupees in paise
+	'currency'        => 'INR'
+];
 
-// $order  = $client->order->create([
-//       'receipt'         => 'order_rcptid_123',
-//       'amount'          => 100, // amount in the smallest currency unit
-//       'currency'        => 'INR',// <a href="/docs/payment-gateway/payments/international-payments/#supported-currencies" target="_blank">See the list of supported currencies</a>.)
-//     ]);
+$razorpayOrder = $api->order->create($orderData);
+$razorpayOrderId = $razorpayOrder->id;
 
 ?>
 <!DOCTYPE html>
@@ -346,15 +347,26 @@ if (empty($_GET['id'])) {
 											</ul>
 										</div>
 									</div>
-									<!-- <script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_live_qfZTHJ6CFHUMc0" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
-
-									</script> -->
-									<input type="hidden" name="regsucess">
-									<input type="hidden" custom="Hidden Element" name="hidden">
+									<script
+						    	        id="pay"
+                                        src="https://checkout.razorpay.com/v1/checkout.js"
+                                        data-key="<?php echo $keyId; ?>" 
+                                        data-amount="210000"
+                                        data-currency="INR"
+                                        data-buttontext="SUBMIT"
+                                        data-name="Sashakt Vihar"
+                                        data-description="Sashakt Vihar Construction & Security Pvt. Ltd."
+                                        data-image="img/logo1.jpeg"
+                                        data-order_id="<?php echo $razorpayOrderId; ?>"
+                                        data-theme.color="#E96220">
+                                        
+                                    </script>
+                                    <input type="hidden" name="regsucess">
+                                    <input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
-									<center>
+									<!-- <center>
 										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
-									</center>
+									</center> -->
 								</form>
 
 							</div>
@@ -425,7 +437,7 @@ if (empty($_GET['id'])) {
 	</script>
 
 	<script>
-		$(".razorpay-payment-").click(function() {
+		$(".razorpay-payment-button").click(function() {
 
 			uplodeimgcheck();
 			var fame = $('#rfname').val();
