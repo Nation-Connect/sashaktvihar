@@ -454,18 +454,18 @@ var options = {
                 // alert(response.error.metadata.order_id);
                 // alert(response.error.metadata.payment_id);
             });
-	// 		document.getElementById('rzp-button1').onclick = function(e){
-    // rzp1.open();
-    // e.preventDefault();
-// }
- $("#jobregform").on("submit", function(){
-   //Code: Action (like ajax...)
-   e.preventDefault();
-				if(uplodeimgcheck()){
+			document.getElementById('rzp-button').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+//  $("#jobregform").on("submit", function(){
+//    //Code: Action (like ajax...)
+//    e.preventDefault();
+// 				if(uplodeimgcheck()){
 					
-					rzp1.open();
-				}
- })
+// 					rzp1.open();
+// 				}
+//  })
 			// $('body').on('submit', '#jobregform', function(e) {
 			// 	e.preventDefault();
 			// 	if(uplodeimgcheck()){
