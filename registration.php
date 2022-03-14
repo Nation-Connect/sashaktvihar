@@ -6,12 +6,11 @@ if (empty($_GET['id'])) {
 	exit();
 }
 
-require('vendor/razorpay/razorpay/Razorpay.php');
+require('config.php');
+require('razorpay-php/Razorpay.php');
 
 use Razorpay\Api\Api;
-use Razorpay\Api\Errors\SignatureVerificationError;
-
-$api = new Api('rzp_test_zpYm0jL02q2poD', 'j9R7BvdFoG6TCPvb6SMmLqws');
+$api = new Api($keyId, $keySecret);
 
 $orderData = [
 	'receipt'         => 'rcptid_11',
@@ -20,6 +19,7 @@ $orderData = [
 ];
 
 $razorpayOrder = $api->order->create($orderData);
+$razorpayOrderId = $razorpayOrder['id'];
 
 // include 'Razorpay/razorpay/razorpay/src/Api.php';
 // //$autoloader = require 'Razorpay/razorpay/razorpay/src/Api.php';
