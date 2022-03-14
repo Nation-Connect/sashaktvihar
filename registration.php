@@ -425,28 +425,10 @@ $razorpayOrderId = $razorpayOrder->id;
 		}
 	</script>
 
-	<script>
-		$(".razorpay-payment-").click(function() {
-
-			uplodeimgcheck();
-			var fame = $('#rfname').val();
-			var lame = $('#rlname').val();
-			var name = fname + ' ' + lname;
-			var email = $('#remail').val();
-			var phone = $('#rphone').val();
-			$('#pay').attr('data-prefill.name', name);
-			$('#pay').attr('data-prefill.email', email);
-			$('#pay').attr('data-prefill.contact', phone);
-
-		});
-	</script>
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script>
-    $('body').on('submit', '#jobregform', function(e) {
-        e.preventDefault();
-		if(uplodeimgcheck()){
-            var options = {
+<script>
+var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
                 "amount": 50000, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
                 "currency": "INR",
@@ -472,10 +454,26 @@ $razorpayOrderId = $razorpayOrder->id;
                 // alert(response.error.metadata.order_id);
                 // alert(response.error.metadata.payment_id);
             });
-            rzp1.open();
-		}
-    });
-    </script>
+	// 		document.getElementById('rzp-button1').onclick = function(e){
+    // rzp1.open();
+    // e.preventDefault();
+// }
+ $("#jobregform").on("submit", function(){
+   //Code: Action (like ajax...)
+   e.preventDefault();
+				if(uplodeimgcheck()){
+					
+					rzp1.open();
+				}
+ })
+			// $('body').on('submit', '#jobregform', function(e) {
+			// 	e.preventDefault();
+			// 	if(uplodeimgcheck()){
+					
+			// 		rzp1.open();
+			// 	}
+			// });
+	</script>
 </body>
 
 </html>
