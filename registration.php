@@ -350,10 +350,26 @@ $razorpayOrderId = $razorpayOrder->id;
 										</div>
 
 									</div>
+									<script
+						    	        id="pay"
+                                        src="https://checkout.razorpay.com/v1/checkout.js"
+                                        data-key="<?php echo $keyId; ?>" 
+                                        data-amount="10000"
+                                        data-currency="INR"
+                                        data-buttontext="SUBMIT"
+                                        data-name="Sashakt Vihar"
+                                        data-description="Sashakt Vihar Construction & Security Pvt. Ltd."
+                                        data-image="img/logo1.png"
+                                        
+                                        data-theme.color="#E96220">
+                                        
+                                    </script>
+                                    <input type="hidden" name="regsucess">
+                                    <input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
-									<center>
+									<!-- <center>
 										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
-									</center>
+									</center> -->
 								</form>
 
 							</div>
@@ -426,7 +442,7 @@ $razorpayOrderId = $razorpayOrder->id;
 	</script>
 
 
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
 var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
@@ -457,8 +473,8 @@ var options = {
 			document.getElementById('rzp-button').onclick = function(e){
     rzp1.open();
     e.preventDefault();
-}
-//  $("#jobregform").on("submit", function(){
+} -->
+<!-- //  $("#jobregform").on("submit", function(){
 //    //Code: Action (like ajax...)
 //    e.preventDefault();
 // 				if(uplodeimgcheck()){
@@ -472,8 +488,8 @@ var options = {
 					
 			// 		rzp1.open();
 			// 	}
-			// });
-	</script>
+			// }); -->
+	<!-- </script> -->
 </body>
 
 </html>
