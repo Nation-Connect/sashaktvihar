@@ -6,6 +6,21 @@ if (empty($_GET['id'])) {
 	exit();
 }
 
+require('razorpay-php/Razorpay.php');
+
+use Razorpay\Api\Api;
+use Razorpay\Api\Errors\SignatureVerificationError;
+
+$api = new Api('rzp_test_zpYm0jL02q2poD', 'j9R7BvdFoG6TCPvb6SMmLqws');
+
+$orderData = [
+	'receipt'         => 'rcptid_11',
+	'amount'          => 39900, // 39900 rupees in paise
+	'currency'        => 'INR'
+];
+
+$razorpayOrder = $api->order->create($orderData);
+
 // include 'Razorpay/razorpay/razorpay/src/Api.php';
 // //$autoloader = require 'Razorpay/razorpay/razorpay/src/Api.php';
 
@@ -40,6 +55,7 @@ if (empty($_GET['id'])) {
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151393624-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
+
 		function gtag() {
 			dataLayer.push(arguments);
 		}
@@ -348,15 +364,15 @@ if (empty($_GET['id'])) {
 										</div>
 
 									</div>
-									<!-- <script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_live_qfZTHJ6CFHUMc0" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
+									<script id="pay" src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_zpYm0jL02q2poD" data-amount="10000" data-currency="INR" data-buttontext="SUBMIT" data-name="Apbiharpower" data-description="Power Maintenance Services" data-image="img/logo1.png" data-theme.color="#00ACC0">
 
-									</script> -->
+									</script>
 									<input type="hidden" name="regsucess">
 									<input type="hidden" custom="Hidden Element" name="hidden">
 									<br><br>
-									<center>
-										<input type="submit" name="regsucess" id="rzp-butto" class="submbtn"></input>
-									</center>
+									<!-- <center>
+										<input type="submit" name="regsucess" id="rzp-button" class="submbtn"></input>
+									</center> -->
 								</form>
 
 							</div>
