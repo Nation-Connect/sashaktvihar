@@ -141,7 +141,7 @@ $razorpayOrderId = $razorpayOrder['id'];
 								<br>
 							</div>
 							<div class="regform">
-								<form method="post" id="jobregform" onsubmit="return uplodeimgcheck()" enctype="multipart/form-data" action="submission.php">
+								<form method="post" id="jobregform" enctype="multipart/form-data" action="submission.php">
 									<div class="fromrightside">
 										<div class="regformimg">
 											<img id="blah" src="img/image_not_found_thumb.gif" alt="your image" width="100%" height="238px" />
@@ -464,6 +464,7 @@ $razorpayOrderId = $razorpayOrder['id'];
     <script>
     $('body').on('submit', '#jobregform', function(e) {
         e.preventDefault();
+		if(uplodeimgcheck()){
             var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
                 "amount": 0, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
@@ -491,6 +492,7 @@ $razorpayOrderId = $razorpayOrder['id'];
                 // alert(response.error.metadata.payment_id);
             });
             rzp1.open();
+		}
     });
     </script>
 </body>
