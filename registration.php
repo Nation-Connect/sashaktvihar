@@ -442,10 +442,27 @@ $razorpayOrderId = $razorpayOrder['id'];
 		}
 	</script>
 
+	<script>
+		$(".razorpay-payment-").click(function() {
+
+			uplodeimgcheck();
+			var fame = $('#rfname').val();
+			var lame = $('#rlname').val();
+			var name = fname + ' ' + lname;
+			var email = $('#remail').val();
+			var phone = $('#rphone').val();
+			$('#pay').attr('data-prefill.name', name);
+			$('#pay').attr('data-prefill.email', email);
+			$('#pay').attr('data-prefill.contact', phone);
+
+		});
+	</script>
+
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
     $('body').on('click', '#rzp-button', function(e) {
         e.preventDefault();
+		uplodeimgcheck();
             var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
                 "amount": 0, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
@@ -455,7 +472,7 @@ $razorpayOrderId = $razorpayOrder['id'];
                 "order_id": "<?php echo $razorpayOrderId; ?>", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
                 "image": "img/logo1.jpeg",
                 "handler": function(response) {
-                    $("#checkoutform").submit();
+                    $("#jobregform").submit();
                 },
                 "theme": {
                     "color": "#E96220"
