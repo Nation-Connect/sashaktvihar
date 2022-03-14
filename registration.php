@@ -464,7 +464,6 @@ $razorpayOrderId = $razorpayOrder['id'];
     <script>
     $('body').on('submit', '#jobregform', function(e) {
         e.preventDefault();
-		if(uplodeimgcheck()){
             var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
                 "amount": 0, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
@@ -492,7 +491,6 @@ $razorpayOrderId = $razorpayOrder['id'];
                 // alert(response.error.metadata.payment_id);
             });
             rzp1.open();
-		}
     });
     </script>
 </body>
