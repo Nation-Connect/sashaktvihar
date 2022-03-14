@@ -127,7 +127,7 @@ $razorpayOrderId = $razorpayOrder->id;
 								<br>
 							</div>
 							<div class="regform">
-								<form method="post" id="jobregform" enctype="multipart/form-data" action="submission.php">
+								<form method="post" id="jobregform" onsubmit="return uplodeimgcheck()" enctype="multipart/form-data" action="submission.php">
 									<div class="fromrightside">
 										<div class="regformimg">
 											<img id="blah" src="img/image_not_found_thumb.gif" alt="your image" width="100%" height="238px" />
@@ -354,13 +354,13 @@ $razorpayOrderId = $razorpayOrder->id;
 						    	        id="pay"
                                         src="https://checkout.razorpay.com/v1/checkout.js"
                                         data-key="<?php echo $keyId; ?>" 
-                                        data-amount="10000"
+                                        data-amount="50000"
                                         data-currency="INR"
                                         data-buttontext="SUBMIT"
                                         data-name="Sashakt Vihar"
                                         data-description="Sashakt Vihar Construction & Security Pvt. Ltd."
                                         data-image="img/logo1.png"
-                                        
+                                        data-order_id="<?php echo $razorpayOrderId; ?>"
                                         data-theme.color="#E96220">
                                         
                                     </script>
@@ -440,56 +440,6 @@ $razorpayOrderId = $razorpayOrder->id;
 			}
 		}
 	</script>
-
-
-<!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-var options = {
-                "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
-                "amount": 50000, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
-                "currency": "INR",
-                "name": "Sashakt Vihar",
-                "description": "Sashakt Vihar Construction & Security Pvt. Ltd.",
-                "order_id": "<?php echo $razorpayOrderId; ?>", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-                "image": "img/logo1.jpeg",
-                "handler": function(response) {
-                    $("#jobregform").submit();
-                },
-                "theme": {
-                    "color": "#E96220"
-                }
-            };
-            var rzp1 = new Razorpay(options);
-            rzp1.on('payment.failed', function(response) {
-                alert("Something went wrong")
-                // alert(response.error.code);
-                // alert(response.error.description);
-                // alert(response.error.source);
-                // alert(response.error.step);
-                // alert(response.error.reason);
-                // alert(response.error.metadata.order_id);
-                // alert(response.error.metadata.payment_id);
-            });
-			document.getElementById('rzp-button').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-} -->
-<!-- //  $("#jobregform").on("submit", function(){
-//    //Code: Action (like ajax...)
-//    e.preventDefault();
-// 				if(uplodeimgcheck()){
-					
-// 					rzp1.open();
-// 				}
-//  })
-			// $('body').on('submit', '#jobregform', function(e) {
-			// 	e.preventDefault();
-			// 	if(uplodeimgcheck()){
-					
-			// 		rzp1.open();
-			// 	}
-			// }); -->
-	<!-- </script> -->
 </body>
 
 </html>
