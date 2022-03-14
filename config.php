@@ -1,6 +1,6 @@
 <?php
-$keyId = 'rzp_live_JxLRLhqs3x0bRq';
-$keySecret = 'o1ZhVp9FlyHm06brWTal9PL5';
+$keyId = 'rzp_test_zpYm0jL02q2poD';
+$keySecret = 'j9R7BvdFoG6TCPvb6SMmLqws';
 $displayCurrency = 'INR';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);

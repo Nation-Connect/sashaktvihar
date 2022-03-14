@@ -14,7 +14,7 @@ $api = new Api($keyId, $keySecret);
 
 $orderData = [
 	'receipt'         => time(),
-	'amount'          => 100, // 39900 rupees in paise
+	'amount'          => 50000, // 39900 rupees in paise
 	'currency'        => 'INR'
 ];
 
@@ -453,7 +453,7 @@ $razorpayOrderId = $razorpayOrder->id;
 		if(uplodeimgcheck()){
             var options = {
                 "key": "<?php echo $keyId; ?>", // Enter the Key ID generated from the Dashboard
-                "amount": 0, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
+                "amount": 50000, // Amount is in currency subunits. Default currency is INR. Hence, 10 refers to 1000 paise
                 "currency": "INR",
                 "name": "Sashakt Vihar",
                 "description": "Sashakt Vihar Construction & Security Pvt. Ltd.",
