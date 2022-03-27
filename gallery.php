@@ -70,7 +70,7 @@ include 'db.php';
 						<div class="row">
 							<div class="col-md-12">
 								<div class="page-title">
-									<h2>Gallery</h2>
+									<h2 style="color:black">Gallery</h2>
 									<ul class="breadcrumb">
 										<li><a href="index.php">Home</a></li>
 										<li class="active">Gallery</li>

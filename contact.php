@@ -67,7 +67,7 @@ include 'db.php';
 						<div class="row">
 							<div class="col-md-12">
 								<div class="page-title">
-									<h2>Contact us</h2>
+									<h2 style="color:black">Contact us</h2>
 									<ul class="breadcrumb">
 										<li><a href="index.php">Home</a></li>
 										<li class="active">contact</li>

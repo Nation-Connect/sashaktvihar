@@ -96,7 +96,7 @@ include 'db.php';
 						<div class="col-md-12">
 							<center>
 								<br><br><br>
-								<h1>Our Team in our Company</h1>
+								<h1 style="color:black">Our Team in our Company</h1>
 							</center>
 							<!--<p>Not another fluffy team presentation</p>-->
 							<!-- ********* <3 ********* ONE ********* <3 ********* -->
