@@ -3,7 +3,7 @@
 		<div class="footer-top">
 			<div class="col-md-5 col-sm-6">
 				<div class="contact-us">
-					<h4>Contact us</h4>
+					<h4 style="color:black">Contact us</h4>
 					<address>
 						<span>Office :</span>
 						Patna-800001<br>
@@ -21,7 +21,7 @@
 
 			<div class="col-md-3 col-sm-6">
 				<div class="responsability">
-					<h4>Links</h4>
+					<h4 style="color:black">Links</h4>
 					<ul>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="about.php">About us</a></li>
@@ -38,7 +38,7 @@
 				<div class="logo footer-logo">
 					<a title="sashaktvihar" href="index.php">
 						<!--<img src="img/logo1.png" alt="Anjali & Poonam Power Services Pvt. Ltd.">-->
-						<h4>Sashakt Vihar Construction & Security Pvt. Ltd.</h4>
+						<h4 style="color:black">Sashakt Vihar Construction & Security PVT. LTD.</h4>
 					</a>
 					<p>Sashakt Vihar Construction & Security Pvt. Ltd. Is One The Leading
 						Construction & Power Maintenance Services Providing Company In Bihar.</p>

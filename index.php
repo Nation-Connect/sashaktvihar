@@ -130,7 +130,7 @@ include 'db.php';
 
                                 if ($slideresult->num_rows > 0) {
                                     while ($row = $slideresult->fetch_assoc()) {
-                                        echo '<marquee onmouseover="stop()" onmouseout="start()"><h3 class="marh3"  style="color:blue;padding:10px;">' . $row["data"] . '</h3></marquee>';
+                                        echo '<marquee onmouseover="stop()" onmouseout="start()"><h3 class="marh3"  style="color:black;padding:10px;">' . $row["data"] . '</h3></marquee>';
                                     }
                                 } else {
                                     //echo "<img src='img/nojob.png' style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
