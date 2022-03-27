@@ -143,7 +143,7 @@ include 'db.php';
                                 $slideresult = $conn->query($slidersql);
                                 if ($slideresult->num_rows > 0) {
                                     while ($row = $slideresult->fetch_assoc()) {
-                                        echo '<marquee class="marh31" scrolldelay="100" onmouseover="stop()" onmouseout="start()"><h3 style="color:blue;padding-top:5px;">' . $row["data"] . '</h3></marquee>';
+                                        echo '<marquee class="marh31" scrolldelay="100" onmouseover="stop()" onmouseout="start()"><h3 style="color:black;padding-top:5px;">' . $row["data"] . '</h3></marquee>';
                                     }
                                 } else {
                                     //echo "<img src='img/nojob.png' style='display: block; width:30%; margin-left:auto; margin-right:auto;'>";
