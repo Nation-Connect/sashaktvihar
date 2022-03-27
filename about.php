@@ -69,7 +69,7 @@ include 'db.php';
 						<div class="row">
 							<div class="col-md-12">
 								<div class="page-title">
-									<h2 style="color:black">About</h2>
+									<h2>About</h2>
 									<ul class="breadcrumb">
 										<li><a href="index.php">Home</a></li>
 										<li class="active">About us</li>
@@ -87,7 +87,7 @@ include 'db.php';
 					<div class="row">
 						<div class="col-md-12">
 							<div class="history">
-								<h3>About Us</h3>
+								<h3 style="color:black">About Us</h3>
 								<div class="history-details">
 									<img src="img/welcome-home.jpg" alt="sashaktvihar">
 									<p style="text-align:justify;">
