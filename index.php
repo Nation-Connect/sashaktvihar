@@ -336,20 +336,20 @@ include 'db.php';
                                             <p class="team-wichmagazine">C.M.D</p>
                                             <hr />
                                             <p class="team-contactdata"><i class="fa fa-phone"></i> +91
-                                                8294033516<br /> <i class="fa fa-envelope"></i> connecttopinku@gmail.com</p>
+                                            7667105622<br /> <i class="fa fa-envelope"></i> connecttopinku@gmail.com</p>
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-xs-6 teamitem item">
                                         <div class="teamitem-inner">
-                                            <div class="img-team-outer"><img src="img/team/hr.jpeg" class="img-responsive img-team" height="600" width="600" />
+                                            <div class="img-team-outer"><img src="img/team/hr.png" class="img-responsive img-team" height="600" width="600" />
                                             </div>
-                                            <p class="team-name">Mrs. Madhu Kumari</p>
+                                            <p class="team-name">Mr. Banty Kumar</p>
                                             <div class="ourteambtborder"></div>
                                             <p class="team-wichmagazine">Senior-HR</p>
                                             <hr />
-                                            <p class="team-contactdata"><i class="fa fa-phone"></i> +91 7739602886
-                                                <br /><i class="fa fa-envelope"></i> strikemadhu01@gmail.com
+                                            <p class="team-contactdata"><i class="fa fa-phone"></i> +91 8294033516
+                                                <br /><i class="fa fa-envelope"></i> sashaktvihar0@gmail.com
                                             </p>
                                         </div>
                                     </div>

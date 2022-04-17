@@ -115,14 +115,14 @@ include 'db.php';
 									</div>
 								</li>
 								<li class="transition">
-									<div class="wrapper"> <img class="transition" src="img/team/hr.jpeg">
+									<div class="wrapper"> <img class="transition" src="img/team/hr.png">
 										<ul class="social">
 											<li> Senior-HR <br>
-												Mrs. Madhu Kumari</li>
+												Mr. Banty Kumar</li>
 										</ul>
 
 										<span class="transition">
-											<h2>Mrs. Madhu Kumari <em>Senior-HR</em></h2>
+											<h2>Mr. Banty Kuma <em>Senior-HR</em></h2>
 											<i class="hhide">more</i>
 										</span>
 									</div>
